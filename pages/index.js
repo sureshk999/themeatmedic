@@ -34,6 +34,7 @@ export default function Home({ posts }) {
         <div className="divide-y divide-gray-200 dark:divide-gray-700">
           <a href="https://google.com">
             <Image
+              alt="health courses now available"
               src="/click.jpg"
               layout="responsive"
               height="30vh"
@@ -58,10 +59,10 @@ export default function Home({ posts }) {
                         <Link>
                           <a href={`/blog/${slug}`}>
                             <Image
+                              alt="health courses"
                               src="/test.jpg"
-                              alt="My Image"
-                              height={260}
-                              width={462}
+                              height={262}
+                              width={466}
                               layout="responsive"
                             />
                           </a>
