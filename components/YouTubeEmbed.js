@@ -30,6 +30,7 @@ const YouTubeEmbed = ({ videoId, apiKey }) => {
     <div>
       <div>
         <iframe
+          loading="lazy"
           width="560"
           height="315"
           src={`https://www.youtube.com/embed/${videoId}`}
