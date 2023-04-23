@@ -28,11 +28,9 @@ const YouTubeEmbed = ({ videoId, apiKey }) => {
 
   return (
     <div>
-      <div>
+      <div className="aspect-w-16 aspect-h-9">
         <iframe
           loading="lazy"
-          width="1280"
-          height="720"
           src={`https://www.youtube.com/embed/${videoId}`}
           title={videoTitle}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
