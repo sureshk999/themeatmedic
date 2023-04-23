@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'The Meat Medic',
+  author: 'Dr Suresh Khirwadkar',
+  headerTitle: 'The Meat Medic',
+  description: 'Optomising physical and mental health through diet, nutrition and lifestyle',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',

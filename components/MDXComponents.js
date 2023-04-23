@@ -6,8 +6,10 @@ import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
+import YouTubeEmbed from './YouTubeEmbed'
 
 export const MDXComponents = {
+  YouTubeEmbed,
   Image,
   TOCInline,
   a: CustomLink,

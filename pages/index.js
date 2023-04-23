@@ -3,10 +3,9 @@ import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
-
 import Image from 'next/image'
-
 import dynamic from 'next/dynamic'
+import PodcastPlayer from '@/components/PodcastPlayer'
 
 const NewsletterForm = dynamic(() => import('../components/NewsletterForm'))
 const Tag = dynamic(() => import('../components/Tag'))
@@ -26,12 +25,25 @@ export default function Home({ posts }) {
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest Articles
+            {siteMetadata.title}
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
         </div>
+
+        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+          <a href="https://google.com">
+            <Image
+              src="/click.jpg"
+              layout="responsive"
+              height="30vh"
+              width="60vw"
+              objectFit="cover"
+            />
+          </a>
+        </div>
+
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
@@ -39,25 +51,25 @@ export default function Home({ posts }) {
             return (
               <li key={slug} className="py-12">
                 <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-start xl:space-y-0">
                     <dl>
                       <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium leading-6 text-gray-700 dark:text-gray-400">
+
+                      <dd className="mb-7 mt-1 mr-4 ml-0 text-base font-medium leading-6 text-gray-700 dark:text-gray-400">
+                        <Link>
+                          <a href={`/blog/${slug}`}>
+                            <Image
+                              src="/test.jpg"
+                              alt="My Image"
+                              height={260}
+                              width={462}
+                              layout="responsive"
+                            />
+                          </a>
+                        </Link>
+                      </dd>
+                      <dd>
                         <time dateTime={date}>{formatDate(date)}</time>
-                        <dd />
-
-                        <Image
-                          src={image}
-                          alt="My Image"
-                          layout="responsive"
-                          height={200}
-                          width={200}
-                        />
-
-                        {/* <img
-                              
-                              src={image} height="200px">
-                            </img> */}
                       </dd>
                     </dl>
 
@@ -91,6 +103,7 @@ export default function Home({ posts }) {
                           Read more &rarr;
                         </Link>
                       </div>
+                      <br></br>
                     </div>
                   </div>
                 </article>
