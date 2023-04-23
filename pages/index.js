@@ -5,7 +5,6 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import Newsletter from '@/components/Newsletter'
 
 const NewsletterForm = dynamic(() => import('../components/NewsletterForm'))
 const Tag = dynamic(() => import('../components/Tag'))
