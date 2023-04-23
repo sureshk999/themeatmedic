@@ -5,7 +5,6 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import PodcastPlayer from '@/components/PodcastPlayer'
 import Newsletter from '@/components/Newsletter'
 
 const NewsletterForm = dynamic(() => import('../components/NewsletterForm'))
@@ -127,6 +126,8 @@ export default function Home({ posts }) {
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">
           <NewsletterForm />
+
+          <Newsletter />
         </div>
       )}
     </>
