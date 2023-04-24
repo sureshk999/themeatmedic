@@ -56,6 +56,14 @@ export default function Home({ posts }) {
             <br /> <br />
             Dr Suresh specialises in helping patients through diet and nutrition
           </p>
+
+          <div className="flex flex-col items-center justify-center">
+            <a href="https://drsuresh.com.au">
+              <button className=" rounded-md bg-black py-2 px-4 font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 sm:py-0">
+                Click Here
+              </button>
+            </a>
+          </div>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
