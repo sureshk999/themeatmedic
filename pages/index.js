@@ -79,18 +79,16 @@ export default function Home({ posts }) {
                       <dt className="sr-only">Published on</dt>
 
                       <dd className="mb-7 mt-1 mr-4 ml-0 text-base font-medium leading-6 text-gray-700 dark:text-gray-400">
-                        <Link>
-                          <a href={`/blog/${slug}`}>
-                            <Image
-                              alt="health courses"
-                              src="/test.jpg"
-                              height={262}
-                              width={466}
-                              layout="responsive"
-                              loading="lazy"
-                            />
-                          </a>
-                        </Link>
+                        <a href={`/blog/${slug}`}>
+                          <Image
+                            alt="health courses"
+                            src="/test.jpg"
+                            height={262}
+                            width={466}
+                            layout="responsive"
+                            loading="lazy"
+                          />
+                        </a>
                       </dd>
                       <dd>
                         <time dateTime={date}>{formatDate(date)}</time>
