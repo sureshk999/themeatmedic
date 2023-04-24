@@ -37,15 +37,29 @@ module.exports = withPWA({
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
-  default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app youtube.com *.youtube.com;
-  style-src 'self' 'unsafe-inline';
-  img-src * blob: data:;
-  media-src 'none';
-  connect-src *;
-  font-src 'self';
-  frame-src giscus.app youtube.com *.youtube.com
-`
+//   default-src 'self';
+//   script-src 'self' giscus.app youtube.com *.youtube.com;
+//   style-src 'self' ;
+//   img-src * blob: data:;
+//   media-src 'none';
+//   connect-src *;
+//   font-src 'self';
+//   frame-src giscus.app youtube.com *.youtube.com
+// `
+
+// const cspNonce = crypto.randomBytes(16).toString('base64');
+// const cspHash = crypto.createHash('sha256').update('your_script_here').digest('base64');
+
+// app.use(helmet.contentSecurityPolicy({
+//   directives: {
+//     defaultSrc: ["'self'"],
+//     scriptSrc: ["'self'", `'nonce-${cspNonce}'`, `'sha256-${cspHash}'`, "https://giscus.app", "https://www.youtube.com", "https://*.youtube.com"],
+//     styleSrc: ["'self'", `'nonce-${cspNonce}'`],
+//     objectSrc: ["'none'"],
+//     frameSrc: ["https://giscus.app", "https://www.youtube.com", "https://*.youtube.com"],
+//     upgradeInsecureRequests: true,
+//   },
+// }));
 
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
