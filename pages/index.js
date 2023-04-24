@@ -82,7 +82,7 @@ export default function Home({ posts }) {
                         <a href={`/blog/${slug}`}>
                           <img
                             alt="health courses"
-                            src="/click.webp"
+                            src="/click.avif"
                             height={262}
                             width={466}
                             layout="responsive"
