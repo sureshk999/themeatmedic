@@ -78,7 +78,7 @@ export default function Home({ posts }) {
                     <dl>
                       <dt className="sr-only">Published on</dt>
 
-                      <dd className="mb-7 mt-1 mr-4 ml-0 text-base font-medium leading-6 text-gray-700 dark:text-gray-400">
+                      <dd className="mb-7 mt-1 mr-1 ml-0 text-base font-medium leading-6 text-gray-700 dark:text-gray-400">
                         <a href={`/blog/${slug}`}>
                           <Image
                             alt="health courses"
