@@ -35,7 +35,7 @@ export default function Home({ posts }) {
           <a href="https://drsuresh.com.au">
             <Image
               alt="health courses now available"
-              src="/click.jpg"
+              src="/click.avif"
               layout="responsive"
               height="30vh"
               width="60vw"
@@ -80,7 +80,7 @@ export default function Home({ posts }) {
 
                       <dd className="mb-7 mt-1 mr-1 ml-0 text-base font-medium leading-6 text-gray-700 dark:text-gray-400">
                         <a href={`/blog/${slug}`}>
-                          <img
+                          <Image
                             alt="health courses"
                             src="/click.avif"
                             height={262}
