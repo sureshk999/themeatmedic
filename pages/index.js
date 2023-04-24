@@ -32,7 +32,7 @@ export default function Home({ posts }) {
         </div>
 
         <div className="divide-y divide-gray-200 dark:divide-gray-700">
-          <a href="https://google.com">
+          <a href="https://drsuresh.com.au">
             <Image
               alt="health courses now available"
               src="/click.jpg"
@@ -43,7 +43,20 @@ export default function Home({ posts }) {
             />
           </a>
         </div>
-
+        <br></br>
+        <hr></hr>
+        <div className=" mb-5 dark:divide-gray-700">
+          <h2 className="mt-2 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            Book now for a consult
+          </h2>
+          <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
+            The Meat Medic Podcast is run by{' '}
+            <a href="https://drsuresh.com.au">Dr Suresh Khirwadkar</a>, a Specialist GP and Board
+            Certified Lifestyle Physician.
+            <br /> <br />
+            Dr Suresh specialises in helping patients through diet and nutrition
+          </p>
+        </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
