@@ -40,6 +40,7 @@ export default function Home({ posts }) {
               height="30vh"
               width="60vw"
               objectFit="cover"
+              loading="eager"
             />
           </a>
         </div>
@@ -53,7 +54,7 @@ export default function Home({ posts }) {
             The Meat Medic Podcast is run by{' '}
             <a href="https://drsuresh.com.au">Dr Suresh Khirwadkar</a>, a Specialist GP and Board
             Certified Lifestyle Physician.
-            <br /> <br />
+            <br />
             Dr Suresh specialises in helping patients through diet and nutrition
           </p>
 
@@ -85,6 +86,7 @@ export default function Home({ posts }) {
                               height={262}
                               width={466}
                               layout="responsive"
+                              loading="lazy"
                             />
                           </a>
                         </Link>
