@@ -18,22 +18,22 @@ module.exports = withPWA({
   },
 })
 
-module.exports = {
-  async headers() {
-    return [
-      {
-        // Allow embedding YouTube videos
-        source: 'https://www.youtube.com',
-        headers: [
-          {
-            key: 'Content-Security-Policy',
-            value: "frame-ancestors 'self' https://www.youtube.com",
-          },
-        ],
-      },
-    ]
-  },
-}
+// module.exports = {
+//   async headers() {
+//     return [
+//       {
+//         // Allow embedding YouTube videos
+//         source: 'https://www.youtube.com',
+//         headers: [
+//           {
+//             key: 'Content-Security-Policy',
+//             value: "frame-ancestors 'self' https://www.youtube.com",
+//           },
+//         ],
+//       },
+//     ]
+//   },
+// }
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
