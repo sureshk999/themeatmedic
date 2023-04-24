@@ -21,13 +21,13 @@ module.exports = withPWA({
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app youtube.com *.youtube.com;
-  style-src 'self' 'unsafe-inline';
+  script-src 'self';
+  style-src 'self';
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src 'n
+  frame-src 'self' youtube.com *.youtube.com giscus.app
 `
 
 // const crypto = require('crypto');
@@ -50,9 +50,9 @@ const ContentSecurityPolicy = `
 //             value: helmet.contentSecurityPolicy({
 //               directives: {
 //                 defaultSrc: ["'self'"],
-//                 scriptSrc: ["'self'", `'nonce-${nonce}'`, `'sha256-${scriptHash}'`, 'https://www.youtube.com', 'https://giscus.app'],
+//                 scriptSrc: ["'self'", `'nonce-${nonce}'`, `'sha256-${scriptHash}'`, 'https://www.youtube.com', 'https://*.youtube.comn', 'https://giscus.app'],
 //                 styleSrc: ["'self'", `'nonce-${nonce}'`],
-//                 frameSrc: ['https://www.youtube.com', 'https://giscus.app'],
+//                 frameSrc: ['https://www.youtube.com', 'https://giscus.app', 'https://*.youtube.comn'],
 //                 objectSrc: ["'none'"],
 //                 upgradeInsecureRequests: [],
 //               },
