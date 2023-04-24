@@ -35,7 +35,7 @@ export default function Home({ posts }) {
           <a href="https://drsuresh.com.au">
             <Image
               alt="health courses now available"
-              src="/click.avif"
+              src="/click.webp"
               layout="responsive"
               height="30vh"
               width="60vw"
@@ -82,7 +82,7 @@ export default function Home({ posts }) {
                         <a href={`/blog/${slug}`}>
                           <Image
                             alt="health courses"
-                            src="/click.avif"
+                            src="/CLICK.webp"
                             height={262}
                             width={466}
                             layout="responsive"
