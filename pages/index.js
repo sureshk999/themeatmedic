@@ -59,10 +59,11 @@ export default function Home({ posts }) {
           </p>
 
           <div className="flex flex-col items-center justify-center">
-            <a href="https://drsuresh.com.au">
-              <button className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 ">
-                Click Here
-              </button>
+            <a
+              href="https://drsuresh.com.au"
+              className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
+            >
+              Click Here
             </a>
           </div>
         </div>
