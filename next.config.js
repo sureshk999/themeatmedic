@@ -18,23 +18,6 @@ module.exports = withPWA({
   },
 })
 
-// module.exports = {
-//   async headers() {
-//     return [
-//       {
-//         // Allow embedding YouTube videos
-//         source: 'https://www.youtube.com',
-//         headers: [
-//           {
-//             key: 'Content-Security-Policy',
-//             value: "frame-ancestors 'self' https://www.youtube.com",
-//           },
-//         ],
-//       },
-//     ]
-//   },
-// }
-
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
@@ -44,8 +27,42 @@ const ContentSecurityPolicy = `
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src giscus.app youtube.com *.youtube.com
+  frame-src 'n
 `
+
+// const crypto = require('crypto');
+// const helmet = require('helmet');
+
+// module.exports = {
+//   async headers() {
+//     const nonce = crypto.randomBytes(16).toString('base64');
+//     const scriptHash = crypto
+//       .createHash('sha256')
+//       .update('your_trusted_script_here')
+//       .digest('base64');
+
+//     return [
+//       {
+//         source: '/(.*)',
+//         headers: [
+//           {
+//             key: 'Content-Security-Policy',
+//             value: helmet.contentSecurityPolicy({
+//               directives: {
+//                 defaultSrc: ["'self'"],
+//                 scriptSrc: ["'self'", `'nonce-${nonce}'`, `'sha256-${scriptHash}'`, 'https://www.youtube.com', 'https://giscus.app'],
+//                 styleSrc: ["'self'", `'nonce-${nonce}'`],
+//                 frameSrc: ['https://www.youtube.com', 'https://giscus.app'],
+//                 objectSrc: ["'none'"],
+//                 upgradeInsecureRequests: [],
+//               },
+//             }),
+//           },
+//         ],
+//       },
+//     ];
+//   },
+// };
 
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP

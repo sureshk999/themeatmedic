@@ -35,6 +35,7 @@ const YouTubeEmbed = ({ videoId, apiKey }) => {
           title={videoTitle}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
+          // nonce="GENERATED_NONCE"
         />
       </div>
       <h2>{videoTitle}</h2>
