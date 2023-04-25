@@ -152,6 +152,7 @@ export const BlogSEO = ({
         {date && <meta property="article:published_time" content={publishedAt} />}
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         <script
+          integrity="sha256-eMuh8xiwcX72rRYNAGENurQBAcH7kLlAUQcoOri3BIo="
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredData, null, 2),
