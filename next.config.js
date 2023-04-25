@@ -27,7 +27,7 @@ const ContentSecurityPolicy = `
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src 'self'
+  frame-src 'self' 'nonce-${nonce}'
 `
 
 const crypto = require('crypto')
