@@ -18,9 +18,6 @@ module.exports = withPWA({
   },
 })
 
-const crypto = require('crypto')
-const nonce = crypto.randomBytes(16).toString('base64')
-
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';

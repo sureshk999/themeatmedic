@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const crypto = require('crypto')
-const nonce = crypto.randomBytes(16).toString('base64')
-
 const YouTubeEmbed = ({ videoId, apiKey }) => {
   const [videoTitle, setVideoTitle] = useState('')
   const [videoDescription, setVideoDescription] = useState('')
