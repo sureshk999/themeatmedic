@@ -39,7 +39,7 @@ export default function Home({ posts }) {
               height="30vh"
               width="60vw"
               objectFit="cover"
-              loading="lazy"
+              loading="eager"
             />
           </a>
         </div>
@@ -91,7 +91,7 @@ export default function Home({ posts }) {
               height="30vh"
               width="60vw"
               objectFit="cover"
-              loading="eager"
+              loading="lazy"
             />
           </a>
         </div>
