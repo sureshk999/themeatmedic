@@ -18,6 +18,9 @@ module.exports = withPWA({
   },
 })
 
+const crypto = require('crypto')
+const nonce = crypto.randomBytes(16).toString('base64')
+
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
@@ -29,31 +32,6 @@ const ContentSecurityPolicy = `
   font-src 'self';
   frame-src 'self' 'nonce-${nonce}'
 `
-
-const crypto = require('crypto')
-const nonce = crypto.randomBytes(16).toString('base64')
-
-module.exports = {
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'Content-Security-Policy',
-            value: `default-src 'self'; 
-            script-src 'self' 'nonce-${nonce}'; 
-            style-src 'self' 'unsafe-inline' 'nonce-${nonce}';
-            img-src * data:; 
-            font-src 'self' data:; 
-            frame-src 'self' 'nonce-${nonce}' youtube.com giscus.app;`,
-          },
-        ],
-      },
-    ]
-  },
-}
-
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
   {
