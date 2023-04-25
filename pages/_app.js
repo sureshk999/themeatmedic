@@ -21,7 +21,7 @@ const isSocket = process.env.SOCKET
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter()
-  const site = 'https://drsuresh.com.au'
+  const site = 'https:/themeatmedic.com'
   const canonicalURL = site + useRouter().asPath
 
   useEffect(() => {
