@@ -245,6 +245,7 @@ export default function Home({ posts }) {
           <h3 className=" text-3xl font-bold leading-8 tracking-tight">Prefer to listen?</h3>
           <div className="w-full; h-min; overflow: hidden;">
             <iframe
+              title="podcast"
               className="mb-2 h-60 w-full rounded-3xl py-2"
               src="https://player.captivate.fm/show/1004517b-ed99-4d48-911a-5fc046f4877f/latest/"
             ></iframe>
