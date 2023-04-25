@@ -30,7 +30,7 @@ const ContentSecurityPolicy = `
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src 'self' 'nonce-${nonce}'
+  frame-src 'self' *.youtube.com
 `
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
