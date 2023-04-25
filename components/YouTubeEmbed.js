@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
+const crypto = require('crypto')
+const nonce = crypto.randomBytes(16).toString('base64')
+
 const YouTubeEmbed = ({ videoId, apiKey }) => {
   const [videoTitle, setVideoTitle] = useState('')
   const [videoDescription, setVideoDescription] = useState('')
@@ -35,6 +38,7 @@ const YouTubeEmbed = ({ videoId, apiKey }) => {
           title={videoTitle}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
+          nonce={nonce}
         />
       </div>
       <h2>{videoTitle}</h2>

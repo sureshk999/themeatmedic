@@ -27,42 +27,32 @@ const ContentSecurityPolicy = `
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src 'self' youtube.com *.youtube.com giscus.app
+  frame-src 'self'
 `
 
-// const crypto = require('crypto');
-// const helmet = require('helmet');
+const crypto = require('crypto')
+const nonce = crypto.randomBytes(16).toString('base64')
 
-// module.exports = {
-//   async headers() {
-//     const nonce = crypto.randomBytes(16).toString('base64');
-//     const scriptHash = crypto
-//       .createHash('sha256')
-//       .update('your_trusted_script_here')
-//       .digest('base64');
-
-//     return [
-//       {
-//         source: '/(.*)',
-//         headers: [
-//           {
-//             key: 'Content-Security-Policy',
-//             value: helmet.contentSecurityPolicy({
-//               directives: {
-//                 defaultSrc: ["'self'"],
-//                 scriptSrc: ["'self'", `'nonce-${nonce}'`, `'sha256-${scriptHash}'`, 'https://www.youtube.com', 'https://*.youtube.comn', 'https://giscus.app'],
-//                 styleSrc: ["'self'", `'nonce-${nonce}'`],
-//                 frameSrc: ['https://www.youtube.com', 'https://giscus.app', 'https://*.youtube.comn'],
-//                 objectSrc: ["'none'"],
-//                 upgradeInsecureRequests: [],
-//               },
-//             }),
-//           },
-//         ],
-//       },
-//     ];
-//   },
-// };
+module.exports = {
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: `default-src 'self'; 
+            script-src 'self' 'nonce-${nonce}'; 
+            style-src 'self' 'unsafe-inline' 'nonce-${nonce}';
+            img-src * data:; 
+            font-src 'self' data:; 
+            frame-src 'self' 'nonce-${nonce}' youtube.com giscus.app;`,
+          },
+        ],
+      },
+    ]
+  },
+}
 
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
