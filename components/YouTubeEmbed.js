@@ -10,7 +10,9 @@ const YouTubeEmbed = ({ videoId, apiKey }) => {
     if (!videoId) return
 
     axios
-      .get(`https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet`)
+      .get(
+        `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${process.env.YOUTUBE_API_KEY}&part=snippet`
+      )
       .then((response) => {
         const data = response.data
 

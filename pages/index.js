@@ -22,7 +22,7 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+        <div className="space-y-2 pt-6 pb-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {siteMetadata.title} Podcast
           </h1>
@@ -122,9 +122,9 @@ export default function Home({ posts }) {
         </div>
         <div>
           <div>
-            <h4 className="mt-2 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+            <h3 className="mt-2 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
               About
-            </h4>
+            </h3>
             <div className=" w-full">
               <div className="float-left mr-3">
                 <Image
@@ -242,7 +242,7 @@ export default function Home({ posts }) {
               )
             })}
           </ul>
-          <h3 className=" text-3xl font-bold leading-8 tracking-tight">Prefer to listen?</h3>
+          <h4 className=" text-3xl font-bold leading-8 tracking-tight">Prefer to listen?</h4>
           <div className="w-full; h-min; overflow: hidden;">
             <iframe
               title="podcast"
@@ -253,10 +253,10 @@ export default function Home({ posts }) {
           </div>
         </div>
 
+        <h5 className=" mt-2 py-2 text-3xl font-bold leading-8 tracking-tight">
+          Previous Episodes
+        </h5>
         <ul className=" divide-gray-200 dark:divide-gray-700">
-          <h4 className=" mt-2 py-2 text-5xl font-bold leading-8 tracking-tight">
-            Previous Episodes
-          </h4>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags, image } = frontMatter
