@@ -24,7 +24,7 @@ const nonce = crypto.randomBytes(16).toString('base64')
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline';
+  script-src 'self';
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src 'none';
