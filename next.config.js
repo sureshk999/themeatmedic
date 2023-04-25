@@ -27,7 +27,7 @@ const ContentSecurityPolicy = `
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src 'self' *.youtube.com;
+  frame-src 'self' *.youtube.com *.captivate.fm;
   manifest-src 'self'
 
 `
