@@ -40,7 +40,7 @@ export default function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+    <ThemeProvider attribute="class" enableSystem={true} defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="manifest" href="/manifest.json" />

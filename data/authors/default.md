@@ -1,7 +1,7 @@
 ---
 name: Suresh Khirwadkar
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
+occupation: Doctor
 company: Stanford University
 email: address@yoursite.com
 twitter: https://twitter.com/Twitter
