@@ -21,7 +21,7 @@ module.exports = withPWA({
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline';
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src 'none';
@@ -29,6 +29,7 @@ const ContentSecurityPolicy = `
   font-src 'self';
   frame-src 'self' *.youtube.com;
   manifest-src 'self'
+
 `
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
