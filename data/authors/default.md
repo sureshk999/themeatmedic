@@ -23,5 +23,6 @@ I work extensively with low carb nutrition in my usual practice, and it use to h
 
 My real passion though is helping people to help themselves. I'm a huge believer in educating my patients and empowering them to prevent and treat chronic diseases themselves. My goal is to get to the point where my patients never actually need me. Then my job is done.
 
-I'm excited to share that as well as my in-hours face to face consulting, I'm now also offering out of hours video consults for Lifestyle / Functional Medicine consults, as well as psychotherapy and counselling.
-https://linktr.ee/drsureshkhirwadkar for details
+As well as my in-hours face to face consulting, I now also offering out of hours video consults for Lifestyle / Functional Medicine consults, as well as psychotherapy and counselling.
+
+Finally, I'm extremely excited to announce The Meat Medic Discord Community Server - a place where we can all meet, chat, hang out, and get support with our health issues. Further support is available to those who need it through my [membership](url=https://themeatmedic.com/member) programs.
