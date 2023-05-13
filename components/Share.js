@@ -28,6 +28,13 @@ const SocialShareButtons = () => {
       <FacebookShareButton url={typeof window !== 'undefined' && window.location.href}>
         Share on Facebook
       </FacebookShareButton>
+      <FacebookShareButton
+        url={typeof window !== 'undefined' && window.location.href}
+        quote={'share the article'}
+        hashtag={'#themeatmedic'}
+      >
+        <FacebookIcon size={32} round />
+      </FacebookShareButton>
     </>
   )
 }
