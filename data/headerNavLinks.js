@@ -4,7 +4,7 @@ const headerNavLinks = [
   { href: 'https://drsuresh.teachable.com', title: 'Courses' },
   { href: '/community', title: 'Community' },
   { href: '/workwithme', title: 'Work With Me' },
-  { href: '/appearances', title: 'Appearances' },
+  { href: '/tags', title: 'Categories' },
   { href: '/about', title: 'About' },
 ]
 

@@ -2,7 +2,7 @@ import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFileBySlug } from '@/lib/mdx'
 import Tag from '@/components/Tag'
 
-const DEFAULT_LAYOUT = 'PostSimple'
+const DEFAULT_LAYOUT = 'PostPage'
 
 export async function getStaticProps() {
   const authorDetails = await getFileBySlug('pages', ['community'])
