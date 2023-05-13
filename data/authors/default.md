@@ -1,4 +1,5 @@
 ---
+title: 'test'
 name: Suresh Khirwadkar
 avatar: /suresh.webp
 occupation: Doctor

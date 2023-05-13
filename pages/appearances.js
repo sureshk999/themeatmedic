@@ -2,10 +2,10 @@ import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFileBySlug } from '@/lib/mdx'
 import Tag from '@/components/Tag'
 
-const DEFAULT_LAYOUT = 'AuthorLayout'
+const DEFAULT_LAYOUT = 'PostSimple'
 
 export async function getStaticProps() {
-  const authorDetails = await getFileBySlug('authors', ['default'])
+  const authorDetails = await getFileBySlug('pages', ['appearances'])
   return { props: { authorDetails } }
 }
 

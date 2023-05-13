@@ -1,38 +1,88 @@
 ---
-title: Sample .md file
-date: '2016-03-08'
-tags: ['markdown', 'code', 'features']
+title: O Canada
+date: '2017-07-15'
+tags: ['holiday', 'canada', 'images']
 draft: false
-summary: Example of a markdown file with code blocks and syntax highlighting
+summary: The scenic lands of Canada featuring maple leaves, snow-capped mountains, turquoise lakes and Toronto. Take in the sights in this photo gallery exhibition and see how easy it is to replicate with some MDX magic and tailwind classes.
+images: ['/static/images/canada/mountains.jpg']
 ---
 
-A sample post with markdown.
+# O Canada
 
-## Inline Highlighting
+The scenic lands of Canada featuring maple leaves, snow-capped mountains, turquoise lakes and Toronto. Take in the sights in this photo gallery exhibition and see how easy it is to replicate with some MDX magic and tailwind classes.
 
-Sample of inline highlighting `sum = parseInt(num1) + parseInt(num2)`
+Features images served using `next/image` component. The locally stored images are located in a folder with the following path: `/static/images/canada/[filename].jpg`
 
-## Code Blocks
+Since we are using mdx, we can create a simple responsive flexbox grid to display our images with a few tailwind css classes.
 
-Some Javascript code
+---
 
-```javascript
-var num1, num2, sum
-num1 = prompt('Enter first number')
-num2 = prompt('Enter second number')
-sum = parseInt(num1) + parseInt(num2) // "+" means "add"
-alert('Sum = ' + sum) // "+" means combine into a string
+# Gallery
+
+`[![text](image)](link)`
+
+`[![Maple](/static/images/canada/maple.jpg)](https://google.com)`
+
+<div className="flex flex-wrap -mx-2 overflow-hidden xl:-mx-2">
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
+    [![Maple](/static/images/canada/maple.jpg)](https://google.com)
+  </div>
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
+    [![Lake](/static/images/canada/lake.jpg)](https://google.com)
+  </div>
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
+    [![Mountains](/static/images/canada/mountains.jpg)](https://google.com)
+  </div>
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
+    [![Toronto](/static/images/canada/mountains.jpg)](https://google.com)
+  </div>
+  
+</div>
+
+# Implementation
+
+```js
+<div className="-mx-2 flex flex-wrap overflow-hidden xl:-mx-2">
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Maple](/static/images/canada/maple.jpg)
+  </div>
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Lake](/static/images/canada/lake.jpg)
+  </div>
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Mountains](/static/images/canada/mountains.jpg)
+  </div>
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Toronto](/static/images/canada/toronto.jpg)
+  </div>
+</div>
 ```
 
-Some Python code 🐍
+With MDX v2, one can interleave markdown in jsx as shown in the example code.
 
-```python
-def fib():
-    a, b = 0, 1
-    while True:            # First iteration:
-        yield a            # yield 0 to start with and then
-        a, b = b, a + b    # a will now be 1, and b will also be 1, (0 + 1)
+### Photo Credits
 
-for index, fibonacci_number in zip(range(10), fib()):
-     print('{i:3}: {f:3}'.format(i=index, f=fibonacci_number))
-```
+<div>
+  Maple photo by [Guillaume
+  Jaillet](https://unsplash.com/@i_am_g?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/canada?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+</div>
+<div>
+  Mountains photo by [John
+  Lee](https://unsplash.com/@john_artifexfilms?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/canada?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+</div>
+<div>
+  Lake photo by [Tj
+  Holowaychuk](https://unsplash.com/@tjholowaychuk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/canada?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+</div>
+<div>
+  Toronto photo by [Matthew
+  Henry](https://unsplash.com/@matthewhenry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/canada?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+</div>

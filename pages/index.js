@@ -5,7 +5,6 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import readingTime from 'reading-time'
 
 const NewsletterForm = dynamic(() => import('../components/NewsletterForm'))
 const Tag = dynamic(() => import('../components/Tag'))
@@ -180,7 +179,7 @@ export default function Home({ posts }) {
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
             {!posts.length && 'No posts found.'}
             {posts.slice(0, 1).map((frontMatter) => {
-              const { slug, date, title, summary, tags, image } = frontMatter
+              const { slug, date, title, summary, tags, images } = frontMatter
               return (
                 <li key={slug} className="pt-3 pb-1">
                   <article>
@@ -190,11 +189,11 @@ export default function Home({ posts }) {
 
                         <dd className="mb-3 mt-1 text-base font-medium leading-6 text-gray-700 dark:text-gray-400">
                           <a href={`/blog/${slug}`}>
-                            <Image
-                              alt="health courses"
-                              src="/click.webp"
-                              height={288}
-                              width={512}
+                            <img
+                              src={images}
+                              alt={`${title}`}
+                              height={260}
+                              width={462}
                               layout="responsive"
                               loading="lazy"
                             />
@@ -260,7 +259,7 @@ export default function Home({ posts }) {
         <ul className=" divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags, image, readingTime } = frontMatter
+            const { slug, date, title, summary, tags, images, readingTime } = frontMatter
             return (
               <li key={slug} className="pt-3 pb-1">
                 <article>
@@ -270,11 +269,11 @@ export default function Home({ posts }) {
 
                       <dd className="mb-3 mt-1 text-base font-medium leading-6 text-gray-700 dark:text-gray-400">
                         <a href={`/blog/${slug}`}>
-                          <Image
-                            alt="health courses"
-                            src="/click.webp"
-                            height={288}
-                            width={512}
+                          <img
+                            src={images}
+                            alt={`${title}`}
+                            height={260}
+                            width={462}
                             layout="responsive"
                             loading="lazy"
                           />
