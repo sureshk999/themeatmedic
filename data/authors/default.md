@@ -6,8 +6,9 @@ occupation: Doctor
 company: GP and Board Certified Lifestyle Physician
 email: admin@drsuresh.com.au
 twitter: https://twitter.com/themeatmedic
-linkedin: https://www.linkedin.com
-instagram: https://github.com
+linkedin: https://au.linkedin.com/in/skhirwadkar
+instagram: https://instagram.com/themeatmedic
+youtube: https://youtube.com/@themeatmedic
 ---
 
 Born and raised in England, UK, I knew from an early age I wanted to be a doctor. I wanted to help people, and heal them, and I was naturally attracted to General Practice - Primary Care. I attended medical school in England and after graduating did my early house jobs and registrar training in England as well. I was lucky enough to learn under some amazing doctors who taught me a great deal about treating patients in the right way, how to listen and learn from them, and how to actually try to understand disease processes and how the human body worked rather than just rely on guidelines to direct how I treated people. I am truly blessed that they also instilled in me a desire to treat people without medications, and to actually reduce and stop medications where possible, which unfortunately is not common in the medical profession.
