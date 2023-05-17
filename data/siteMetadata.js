@@ -17,6 +17,14 @@ const siteMetadata = {
   youtube: 'https://youtube.com/@themeatmedic',
   linkedin: 'https://au.linkedin.com/in/skhirwadkar',
   instagram: 'https://instagram.com/themeatmedic',
+  applePodcasts: 'https://podcasts.apple.com/au/podcast/the-meat-medic-podcast/id1667140036',
+  googlePodcasts:
+    'https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5jYXB0aXZhdGUuZm0vdGhlLW1lYXQtbWVkaWMtcG9kY2FzdC8?sa=X&ved=0CAIQ9sEGahcKEwiQqKH3xdr8AhUAAAAAHQAAAAAQFA',
+  amazonMusic:
+    'https://music.amazon.com.au/podcasts/cc5d2830-14d2-4e7c-bfb9-78f25c4f0aee/the-meat-medic-podcast',
+  spotify: 'https://open.spotify.com/show/4vqppR122LTxV6DKrehzMA',
+  rss: 'https://feeds.captivate.fm/the-meat-medic-podcast/',
+
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

@@ -46,7 +46,7 @@ export default function Home({ posts }) {
         <br></br>
         <hr></hr>
         <div className=" mb-3 dark:divide-gray-700">
-          <h2 className="mt-2 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+          <h2 className="mt-4 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Want to start a carnivore diet?
           </h2>
           <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
@@ -66,8 +66,77 @@ export default function Home({ posts }) {
               Buy Now
             </a>
           </div>
+          <div className="mt-4 py-5">
+            <h2 className="py-2 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+              Listen to the Meat Medic Podcast for free
+            </h2>
+            <div className="xs:grid-cols-6 flex grid flex-wrap place-items-center gap-x-2 gap-y-5 sm:grid-cols-2 sm:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2">
+              <a
+                href="https://podcasts.apple.com/au/podcast/the-meat-medic-podcast/id1667140036"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
+                  <img src="/applepodcasts.png" />
+                  <p className="px-5">Apple Podcasts</p>
+                </div>
+              </a>
+
+              <a
+                href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5jYXB0aXZhdGUuZm0vdGhlLW1lYXQtbWVkaWMtcG9kY2FzdC8?sa=X&ved=0CAIQ9sEGahcKEwiQqKH3xdr8AhUAAAAAHQAAAAAQFA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
+                  <img src="/googlepodcasts.png" />
+                  <p className="px-5">Google Podcasts</p>
+                </div>
+              </a>
+
+              <a
+                href="https://music.amazon.com.au/podcasts/cc5d2830-14d2-4e7c-bfb9-78f25c4f0aee/the-meat-medic-podcast"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
+                  <img src="/amazonmusic.png" />
+                  <p className="px-5">Amazon Music</p>
+                </div>
+              </a>
+
+              <a
+                href="https://open.spotify.com/show/4vqppR122LTxV6DKrehzMA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
+                  <img src="/spotify.png" />
+                  <p className="px-5">Spotify</p>
+                </div>
+              </a>
+
+              <a
+                href="https://feeds.captivate.fm/the-meat-medic-podcast/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
+                  <img src="/rss.png" />
+
+                  <p className="px-5">RSS Feed</p>
+                </div>
+              </a>
+
+              <a href="https://youtube.com/@themeatmedic" target="_blank" rel="noreferrer">
+                <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
+                  <img src="/youtube.png" />
+                  <p className="px-5">YouTube</p>
+                </div>
+              </a>
+            </div>
+          </div>
           <h2 className="mt-2 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
-            Other health courses available
+            Need help with your health?
           </h2>
           <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
             Check out my other health courses by{' '}
@@ -98,7 +167,7 @@ export default function Home({ posts }) {
         <br></br>
         <hr></hr>
         <div className=" mb-3 dark:divide-gray-700">
-          <h2 className="mt-2 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+          <h2 className="mt-4 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Book now for a consult
           </h2>
           <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">

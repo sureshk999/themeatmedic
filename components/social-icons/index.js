@@ -5,6 +5,11 @@ import Youtube from './youtube.svg'
 import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
 import Instagram from './instagram.svg'
+import applepodcasts from './applepodcasts.svg'
+import googlepodcasts from './googlepodcasts.svg'
+import rss from './rss.svg'
+import spotify from './spotify.svg'
+import amazonmusic from './amazonmusic.svg'
 
 // Icons taken from: https://simpleicons.org/
 
@@ -16,6 +21,11 @@ const components = {
   linkedin: Linkedin,
   twitter: Twitter,
   instagram: Instagram,
+  applePodcasts: applepodcasts,
+  googlePodcasts: googlepodcasts,
+  spotify: spotify,
+  amazonmusic: amazonmusic,
+  rss: rss,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {
