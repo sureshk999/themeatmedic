@@ -311,7 +311,6 @@ export default function Home({ posts }) {
               )
             })}
           </ul>
-          <h4 className=" text-3xl font-bold leading-8 tracking-tight">Prefer to listen?</h4>
         </div>
 
         <div className="mt-4 divide-y divide-gray-200 dark:divide-gray-700">
@@ -321,7 +320,7 @@ export default function Home({ posts }) {
           <a href="https://bit.ly/42Qswb9">
             <Image
               alt="memberships"
-              src="/membership.png"
+              src="/membership.webp"
               layout="responsive"
               height="30vh"
               width="60vw"
