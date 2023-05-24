@@ -322,13 +322,30 @@ export default function Home({ posts }) {
           </div>
         </div>
 
+        <div className="mt-4 divide-y divide-gray-200 dark:divide-gray-700">
+          <h5 className=" mt-2 py-2 text-3xl font-bold leading-8 tracking-tight">
+            Membership Available
+          </h5>
+          <a href="https://bit.ly/42Qswb9">
+            <Image
+              alt="memberships"
+              src="/membership.png"
+              layout="responsive"
+              height="30vh"
+              width="60vw"
+              objectFit="fill"
+              loading="eager"
+            />
+          </a>
+        </div>
+
         <h5 className=" mt-2 py-2 text-3xl font-bold leading-8 tracking-tight">
           Previous Episodes
         </h5>
         <ul className=" divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags, images, readingTime } = frontMatter
+            const { slug, date, title, summary, tags, images } = frontMatter
             return (
               <li key={slug} className="pt-3 pb-1">
                 <article>

@@ -27,7 +27,7 @@ const SocialShareButtons = () => {
 
   return (
     <div className="flex grid flex-wrap place-items-center overflow-hidden px-5 xl:items-start">
-      <h1>Share This Article</h1>
+      <h1>Share This</h1>
       <div className="py-2">
         <FacebookShareButton
           url={typeof window !== 'undefined' && window.location.href}
