@@ -312,6 +312,14 @@ export default function Home({ posts }) {
             })}
           </ul>
           <h4 className=" text-3xl font-bold leading-8 tracking-tight">Prefer to listen?</h4>
+          <div className="w-full; h-min; overflow: hidden;">
+            <iframe
+              title="podcast"
+              className="mb-2 h-60 w-full rounded-3xl py-2"
+              src="https://player.captivate.fm/show/1004517b-ed99-4d48-911a-5fc046f4877f/latest/"
+            ></iframe>
+            <hr></hr>
+          </div>
         </div>
 
         <div className="mt-4 divide-y divide-gray-200 dark:divide-gray-700">
@@ -330,8 +338,88 @@ export default function Home({ posts }) {
             />
           </a>
         </div>
-      </div>
 
+        <h5 className=" mt-2 py-2 text-3xl font-bold leading-8 tracking-tight">
+          Previous Episodes
+        </h5>
+        <ul className=" divide-gray-200 dark:divide-gray-700">
+          {!posts.length && 'No posts found.'}
+          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+            const { slug, date, title, summary, tags, images } = frontMatter
+            return (
+              <li key={slug} className="pt-3 pb-1">
+                <article>
+                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-start xl:space-x-4 xl:space-y-0">
+                    <dl>
+                      <dt className="sr-only">Published on</dt>
+
+                      <dd className="mb-3 mt-1 text-base font-medium leading-6 text-gray-700 dark:text-gray-400">
+                        <a href={`/blog/${slug}`}>
+                          <img
+                            src={images}
+                            alt={`${title}`}
+                            height={260}
+                            width={462}
+                            layout="responsive"
+                            loading="lazy"
+                          />
+                        </a>
+                      </dd>
+                      <dd>
+                        <time dateTime={date}>{formatDate(date)}</time>
+                      </dd>
+                    </dl>
+
+                    <div className="space-y-2 xl:col-span-3">
+                      <div className="space-y-6">
+                        <div>
+                          <h2 className="mb-2 text-3xl font-bold leading-8 tracking-tight">
+                            <Link
+                              href={`/blog/${slug}`}
+                              className="text-gray-900 dark:text-gray-100"
+                            >
+                              {title}
+                            </Link>
+                          </h2>
+                          <div className="flex flex-wrap">
+                            {tags.map((tag) => (
+                              <Tag key={tag} text={tag} />
+                            ))}
+                          </div>
+                        </div>
+                        <div className="prose max-w-none text-gray-700 dark:text-gray-400">
+                          {summary}
+                        </div>
+                      </div>
+                      <div className="text-base font-medium leading-6">
+                        <Link
+                          href={`/blog/${slug}`}
+                          className="font-bold text-red-700 hover:text-primary-700 dark:text-red-400 dark:hover:text-primary-400"
+                          aria-label={`Read "${title}"`}
+                        >
+                          Read more &rarr;
+                        </Link>
+                      </div>
+                      <br></br>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+      {posts.length > MAX_DISPLAY && (
+        <div className="flex justify-end text-base font-medium leading-6">
+          <Link
+            href="/blog"
+            className="text-primary-800 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-400"
+            aria-label="all posts"
+          >
+            All Posts &rarr;
+          </Link>
+        </div>
+      )}
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">
           <NewsletterForm />
