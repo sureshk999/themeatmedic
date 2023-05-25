@@ -21,7 +21,7 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="divide-y divide-gray-200 dark:divide-gray-700 ">
         <div className="space-y-2 pt-6 pb-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {siteMetadata.title} Podcast
@@ -30,6 +30,70 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div>
+        <div>
+          <div className="flex flex-wrap place-items-center items-center overflow-hidden bg-white px-0 py-5 dark:text-black sm:grid-cols-1 md:grid md:grid-cols-2 lg:items-start">
+            <div className="col-span-1">
+              <h2 className="mb-5 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-5 sm:leading-10 md:leading-14 xl:my-10 xl:text-5xl">
+                Welcome!
+              </h2>
+              <h2 className="xs:mt-5 mb-2 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-5 sm:leading-10 md:leading-14 xl:my-10 xl:text-5xl">
+                I'm Dr Suresh Khirwadkar
+              </h2>
+              <br />
+              <p className="mb-3 max-w-none text-xl text-gray-600 dark:text-gray-300">
+                I'm an author, YouTuber, Podcaster, Doctor, Specialist GP, Board Certified Lifestyle
+                Physician (IBLM), and above all, a father and husband.
+                <br />
+                <br />I create in-depth <b>health courses</b> and <b>free guides on my podcast</b>{' '}
+                available for you to optomise your physical and mental health.
+              </p>
+
+              <div className="xs:grid-cols-6 flex grid flex-wrap place-items-center gap-x-2 gap-y-5 sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3">
+                <div className="flex flex-col items-center justify-center">
+                  <a
+                    href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
+                    className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
+                  >
+                    Buy Now
+                  </a>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <a
+                    href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
+                    className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
+                  >
+                    Buy Now
+                  </a>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <a
+                    href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
+                    className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
+                  >
+                    Buy Now
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-span-1 my-1 flex w-full items-center justify-center  overflow-hidden  px-5">
+              <Image
+                className="rounded-2xl"
+                alt="Dr Suresh Khirwadkar"
+                src="/mmp.webp"
+                layout="responsive"
+                height="550px"
+                width="550px"
+                loading="eager"
+              />
+            </div>
+          </div>
+
+          <div className="flex-grid grid-col-6 grid py-5"></div>
+        </div>
+
+        <hr />
+
         <div className="mt-4 divide-y divide-gray-200 dark:divide-gray-700">
           <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
             <Image
