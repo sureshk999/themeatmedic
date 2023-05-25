@@ -112,7 +112,7 @@ export default function Home({ posts }) {
         </div>
         <br></br>
         <div className="">
-          <h2 className="mt-4 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+          <h2 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Want to start a carnivore diet?
           </h2>
           <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
@@ -132,8 +132,8 @@ export default function Home({ posts }) {
               Buy Now
             </a>
           </div>
-          <div className="mt-4 py-5">
-            <h2 className="py-2 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+          <div className="mt-5 py-5">
+            <h2 className="py-10 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
               Listen to the Meat Medic Podcast for free
             </h2>
             <div className="xs:grid-cols-6 flex grid flex-wrap place-items-center gap-x-2 gap-y-5 sm:grid-cols-2 sm:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2">
@@ -201,7 +201,7 @@ export default function Home({ posts }) {
               </a>
             </div>
           </div>
-          <h2 className="mt-2 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+          <h2 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Need help with your health?
           </h2>
           <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
@@ -232,7 +232,7 @@ export default function Home({ posts }) {
         </div>
         <br></br>
         <div className=" mb-3">
-          <h2 className="mt-10 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+          <h2 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Need more help? Book for a consult
           </h2>
           <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
@@ -256,7 +256,7 @@ export default function Home({ posts }) {
         </div>
         <div>
           <div>
-            <h3 className="mt-10 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+            <h3 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
               About
             </h3>
             <div className=" w-full">
