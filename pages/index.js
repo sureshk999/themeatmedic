@@ -21,7 +21,7 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700 ">
+      <div className=" ">
         <div className="space-y-2 pt-6 pb-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {siteMetadata.title} Podcast
@@ -31,24 +31,27 @@ export default function Home({ posts }) {
           </p>
         </div>
         <div>
-          <div className="flex flex-wrap place-items-center items-center overflow-hidden bg-white px-0 py-5 dark:text-black sm:grid-cols-1 md:grid md:grid-cols-2 lg:items-start">
-            <div className="col-span-1">
-              <h2 className="mb-5 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-5 sm:leading-10 md:leading-14 xl:my-10 xl:text-5xl">
-                Welcome!
-              </h2>
-              <h2 className="xs:mt-5 mb-2 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-5 sm:leading-10 md:leading-14 xl:my-10 xl:text-5xl">
+          <div className="flex flex-wrap place-items-center items-center overflow-hidden px-0 py-5 dark:text-black sm:grid sm:grid-cols-1 sm:items-start lg:grid-cols-5 xl:grid-cols-2 ">
+            <div className="mt-0 md:col-span-2 md:mt-0 md:px-0 xl:col-span-1">
+              <h2 className="mb-10 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:mb-0 md:text-4xl md:leading-14 xl:my-5 xl:text-5xl">
                 I'm Dr Suresh Khirwadkar
               </h2>
-              <br />
-              <p className="mb-3 max-w-none text-xl text-gray-600 dark:text-gray-300">
+
+              <p className="md:text-md mb-10 mr-5 mb-3 max-w-none text-xl text-gray-600 dark:text-gray-300 md:mb-0 lg:text-lg xl:text-xl">
+                And welcome to The Meat Medic Podcast where we discuss all things related to
+                nutrition, diet, health and lifestyle, with a focus on <b>meat</b> as a primary
+                nutrition source.
+                <br /> <br />
                 I'm an author, YouTuber, Podcaster, Doctor, Specialist GP, Board Certified Lifestyle
                 Physician (IBLM), and above all, a father and husband.
                 <br />
-                <br />I create in-depth <b>health courses</b> and <b>free guides on my podcast</b>{' '}
-                available for you to optomise your physical and mental health.
+                <br />
+                I've created in-depth <b>health courses</b>, curated my <b>shop</b> and of course my{' '}
+                <b>free podcast</b> is available for you to optomise your physical and mental health
+                through species-appropriate diet, nutrition and lfestyle changes.
               </p>
 
-              <div className="xs:grid-cols-6 flex grid flex-wrap place-items-center gap-x-2 gap-y-5 sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3">
+              <div className="xs:grid-rows-1 mb-10 mr-2 flex grid grid-cols-3 flex-wrap place-items-center gap-x-2 gap-y-5 sm:mt-7 md:grid-cols-3 lg:mt-5 ">
                 <div className="flex flex-col items-center justify-center">
                   <a
                     href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
@@ -76,14 +79,14 @@ export default function Home({ posts }) {
               </div>
             </div>
 
-            <div className="col-span-1 my-1 flex w-full items-center justify-center  overflow-hidden  px-5">
+            <div className="my-1 flex w-full items-center justify-center sm:col-span-3 md:col-span-3 xl:col-span-1">
               <Image
                 className="rounded-2xl"
                 alt="Dr Suresh Khirwadkar"
-                src="/mmp.webp"
-                layout="responsive"
-                height="550px"
-                width="550px"
+                src="/suresh.webp"
+                layout="fixed"
+                height="500px"
+                width="500px"
                 loading="eager"
               />
             </div>
@@ -94,7 +97,7 @@ export default function Home({ posts }) {
 
         <hr />
 
-        <div className="mt-4 divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="">
           <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
             <Image
               alt="30 day carnivore challenge"
@@ -108,8 +111,7 @@ export default function Home({ posts }) {
           </a>
         </div>
         <br></br>
-        <hr></hr>
-        <div className=" mb-3 dark:divide-gray-700">
+        <div className="">
           <h2 className="mt-4 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Want to start a carnivore diet?
           </h2>
@@ -215,11 +217,11 @@ export default function Home({ posts }) {
           </p>
         </div>
 
-        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="">
           <a href="https://drsuresh.teachable.com">
             <Image
               alt="health courses now available"
-              src="/click.webp"
+              src="/click.jpg"
               layout="responsive"
               height="30vh"
               width="60vw"
@@ -229,10 +231,9 @@ export default function Home({ posts }) {
           </a>
         </div>
         <br></br>
-        <hr></hr>
-        <div className=" mb-3 dark:divide-gray-700">
-          <h2 className="mt-4 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
-            Book now for a consult
+        <div className=" mb-3">
+          <h2 className="mt-10 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+            Need more help? Book for a consult
           </h2>
           <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
             The Meat Medic Podcast is run by{' '}
@@ -255,7 +256,7 @@ export default function Home({ posts }) {
         </div>
         <div>
           <div>
-            <h3 className="mt-2 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+            <h3 className="mt-10 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
               About
             </h3>
             <div className=" w-full">
@@ -304,12 +305,12 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-        <div className=" dark:divide-gray-700">
-          <h2 className="mt-2 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <div className=" ">
+          <h2 className="mt-10 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Latest Episode
           </h2>
 
-          <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+          <ul className="">
             {!posts.length && 'No posts found.'}
             {posts.slice(0, 1).map((frontMatter) => {
               const { slug, date, title, summary, tags, images } = frontMatter
@@ -377,9 +378,9 @@ export default function Home({ posts }) {
           </ul>
         </div>
 
-        <div className="mt-4 divide-y divide-gray-200 dark:divide-gray-700">
-          <h5 className=" mt-2 py-2 text-3xl font-bold leading-8 tracking-tight">
-            Membership Available
+        <div className="mt-4">
+          <h5 className=" mt-10 py-5 text-3xl font-bold leading-8 tracking-tight">
+            Memberships Available
           </h5>
           <a href="https://bit.ly/42Qswb9">
             <Image
