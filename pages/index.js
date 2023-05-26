@@ -41,7 +41,7 @@ export default function Home({ posts }) {
                   layout="intrinsic"
                   height="100px"
                   width="100px"
-                  loading="eager"
+                  priority
                   objectFit="cover"
                 />
               </div>
@@ -86,7 +86,7 @@ export default function Home({ posts }) {
               </div>
             </div>
 
-            <div className="relative col-span-1 my-1 flex items-center justify-center">
+            <div className="relative col-span-1 my-1 flex hidden items-center justify-center sm:grid">
               <Image
                 className="rounded-2xl"
                 alt="Dr Suresh Khirwadkar"
@@ -94,7 +94,7 @@ export default function Home({ posts }) {
                 layout="intrinsic"
                 height="550px"
                 width="550px"
-                loading="eager"
+                priority
                 objectFit="cover"
               />
             </div>
