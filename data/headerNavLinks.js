@@ -1,5 +1,5 @@
 const headerNavLinks = [
-  { href: '/blog', title: 'Podcast' },
+  { href: '/blog', title: 'Blog' },
   { href: '/shop', title: 'Shop' },
   { href: 'https://drsuresh.teachable.com', title: 'Courses' },
   { href: '/community', title: 'Community' },

@@ -6,13 +6,15 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import Banner from './Banner'
 
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
+      <Banner />
       <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-5 ">
-          <div>
+        <header className="flex items-center justify-between pt-5 ">
+          <div className="px-5">
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
@@ -44,7 +46,7 @@ const LayoutWrapper = ({ children }) => {
             <MobileNav />
           </div>
         </header>
-        <main className="mb-auto">{children}</main>
+        <main className="mb-auto px-5">{children}</main>
         <Footer />
       </div>
     </SectionContainer>

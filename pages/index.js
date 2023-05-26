@@ -22,80 +22,87 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className=" ">
-        <div className="space-y-2 pt-6 pb-2 md:space-y-5">
+        {/* <div className="space-y-2 pt-6 pb-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {siteMetadata.title} Podcast
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
-        </div>
+        </div> */}
+
+        {/* need to make responsive image */}
         <div>
-          <div className="flex flex-wrap place-items-center items-center overflow-hidden px-0 py-5 dark:text-black sm:grid sm:grid-cols-1 sm:items-start lg:grid-cols-5 xl:grid-cols-2 ">
-            <div className="mt-0 md:col-span-2 md:mt-0 md:px-0 xl:col-span-1">
-              <h2 className="mb-10 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:mb-0 md:text-4xl md:leading-14 xl:my-5 xl:text-5xl">
-                I'm Dr Suresh Khirwadkar
+          <div className="flex grid flex-wrap px-0 py-5 dark:text-black sm:grid-cols-2  ">
+            <div className="col-span-1 py-2 sm:py-5 ">
+              <div className="relative col-span-1 float-right my-1 flex items-center justify-center sm:hidden">
+                <Image
+                  className="rounded-full"
+                  alt="Dr Suresh Khirwadkar"
+                  src="/suresh.webp"
+                  layout="intrinsic"
+                  height="100px"
+                  width="100px"
+                  loading="eager"
+                  objectFit="cover"
+                />
+              </div>
+
+              <h2 className=" mb-5 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 xl:text-5xl">
+                Dr Suresh Khirwadkar
               </h2>
 
-              <p className="md:text-md mb-10 mr-5 mb-3 max-w-none text-xl text-gray-600 dark:text-gray-300 md:mb-0 lg:text-lg xl:text-xl">
-                And welcome to The Meat Medic Podcast where we discuss all things related to
-                nutrition, diet, health and lifestyle, with a focus on <b>meat</b> as a primary
-                nutrition source.
-                <br /> <br />
-                I'm an author, YouTuber, Podcaster, Doctor, Specialist GP, Board Certified Lifestyle
-                Physician (IBLM), and above all, a father and husband.
-                <br />
-                <br />
-                I've created in-depth <b>health courses</b>, curated my <b>shop</b> and of course my{' '}
-                <b>free podcast</b> is available for you to optomise your physical and mental health
-                through species-appropriate diet, nutrition and lfestyle changes.
-              </p>
+              <div>
+                <p className="md:text-md mb-10 mr-5 mb-3 max-w-none text-lg text-gray-600 dark:text-gray-300 md:mb-0 lg:text-lg xl:text-xl">
+                  I'm an author, YouTuber, Podcaster, Doctor, a father and a husband.
+                  <br />
+                  <br />
+                  The Meat Medic Podcast is <b>free</b> and it's available for you to optomise your
+                  physical and mental health through species-appropriate diet, nutrition and
+                  lfestyle changes.
+                  <br />
+                  <br />
+                  I've also created in-depth, no-nonsense <b>health courses</b> for you to learn how
+                  to improve your health, saving your <b>time</b> and <b>money</b>
+                </p>
 
-              <div className="xs:grid-rows-1 mb-10 mr-2 flex grid grid-cols-3 flex-wrap place-items-center gap-x-2 gap-y-5 sm:mt-7 md:grid-cols-3 lg:mt-5 ">
-                <div className="flex flex-col items-center justify-center">
-                  <a
-                    href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
-                    className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
-                  >
-                    Buy Now
-                  </a>
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <a
-                    href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
-                    className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
-                  >
-                    Buy Now
-                  </a>
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <a
-                    href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
-                    className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
-                  >
-                    Buy Now
-                  </a>
+                <div className="mb-10 mr-2 flex grid grid-cols-1 grid-rows-1 flex-wrap place-items-center gap-x-2 gap-y-5 sm:mt-7 md:grid-cols-2 lg:mt-5 ">
+                  <div className="flex flex-col items-center justify-center">
+                    <a
+                      href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
+                      className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
+                    >
+                      Podcast &rarr;
+                    </a>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <a
+                      href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
+                      className="rounded-md border-2 border-double border-black bg-white py-2 px-4 text-xl font-bold text-black hover:bg-primary-500 dark:border-white dark:bg-black dark:text-white dark:hover:bg-primary-500 "
+                    >
+                      Courses &rarr;
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="my-1 flex w-full items-center justify-center sm:col-span-3 md:col-span-3 xl:col-span-1">
+            <div className="relative col-span-1 my-1 flex items-center justify-center">
               <Image
                 className="rounded-2xl"
                 alt="Dr Suresh Khirwadkar"
                 src="/suresh.webp"
-                layout="fixed"
-                height="500px"
-                width="500px"
+                layout="intrinsic"
+                height="650px"
+                width="650px"
                 loading="eager"
+                objectFit="cover"
               />
             </div>
           </div>
 
           <div className="flex-grid grid-col-6 grid py-5"></div>
         </div>
-
-        <hr />
 
         <div className="">
           <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
