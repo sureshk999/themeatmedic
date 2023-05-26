@@ -18,6 +18,12 @@ module.exports = withPWA({
   },
 })
 
+module.exports = {
+  images: {
+    deviceSizes: [100, 200, 550, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+  },
+}
+
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
