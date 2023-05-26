@@ -13,7 +13,7 @@ const LayoutWrapper = ({ children }) => {
     <SectionContainer>
       <Banner />
       <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between px-5 pt-5 ">
+        <header className="flex items-center justify-between px-0 pt-5 sm:px-5 ">
           <div className="px-5">
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">

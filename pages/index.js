@@ -30,8 +30,6 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div> */}
-
-        {/* need to make responsive image */}
         <div>
           <div className="flex grid flex-wrap px-0 py-5 dark:text-black sm:grid-cols-2  ">
             <div className="col-span-1 py-2 sm:py-5 ">
@@ -48,8 +46,8 @@ export default function Home({ posts }) {
                 />
               </div>
 
-              <h1 className=" mb-5 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 lg:py-10 xl:text-5xl">
-                Hello and Welcome! <br></br> <br />
+              <h1 className=" mb-5 mt-5 text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 lg:py-10 xl:text-5xl">
+                Hello and Welcome! <br></br>
                 I'm Dr Suresh Khirwadkar
               </h1>
 
@@ -109,10 +107,15 @@ export default function Home({ posts }) {
           <h2 className="mt-5 mb-10 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Want to start a carnivore diet?
           </h2>
-          <p className="prose mb-3 max-w-none text-lg text-gray-800 dark:text-gray-300">
+          <p className=" mb-3 max-w-none text-lg text-gray-800 dark:text-gray-300">
             New to the Carnivore Diet and not sure what to do? The best way to start is by{' '}
-            <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">clicking here</a>.
-            My guide has over 100 pages of high quality, evidence based, highly researched
+            <Link
+              href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
+              className="text-blue-800 dark:text-blue-500"
+            >
+              clicking here
+            </Link>
+            . My guide has over 100 pages of high quality, evidence based, highly researched
             information and is available via Teachables course or downloadable eBook.
           </p>
 
@@ -162,7 +165,7 @@ export default function Home({ posts }) {
                     layout="intrinsic"
                     height="40px"
                     width="40px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                   <p className="px-5">Apple Podcasts</p>
@@ -181,7 +184,7 @@ export default function Home({ posts }) {
                     layout="intrinsic"
                     height="40px"
                     width="40px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                   <p className="px-5">Google Podcasts</p>
@@ -200,7 +203,7 @@ export default function Home({ posts }) {
                     layout="intrinsic"
                     height="40px"
                     width="40px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                   <p className="px-5">Amazon Music</p>
@@ -219,7 +222,7 @@ export default function Home({ posts }) {
                     layout="intrinsic"
                     height="40px"
                     width="40px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                   <p className="px-5">Spotify</p>
@@ -238,7 +241,7 @@ export default function Home({ posts }) {
                     layout="intrinsic"
                     height="40px"
                     width="40px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
 
@@ -254,7 +257,7 @@ export default function Home({ posts }) {
                     layout="intrinsic"
                     height="40px"
                     width="40px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                   <p className="px-5">YouTube</p>
@@ -275,12 +278,12 @@ export default function Home({ posts }) {
                     layout="responsive"
                     height="180px"
                     width="320px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                 </a>
               </div>
-              <h3 className="mt-5 text-xl font-bold">Insulin Resistance</h3>
+              <h3 className="mt-5 text-xl font-bold dark:text-gray-200">Insulin Resistance</h3>
               <ul>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">Fatigued or low energy? </li>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">
@@ -294,7 +297,7 @@ export default function Home({ posts }) {
                 <li className="ml-2 text-gray-800 dark:text-gray-200">PCOS?</li>
               </ul>
               <br></br>
-              <p className="font-bold text-gray-800">You need this course </p>
+              <p className="font-bold text-gray-800 dark:text-gray-200">You need this course </p>
             </div>
 
             <div className="col-span-1 py-2 px-2">
@@ -306,12 +309,12 @@ export default function Home({ posts }) {
                     layout="responsive"
                     height="180px"
                     width="320px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                 </a>
               </div>
-              <h3 className="mt-5 text-xl font-bold">Carnivore Challenge</h3>
+              <h3 className="mt-5 text-xl font-bold dark:text-gray-200">Carnivore Challenge</h3>
               <ul>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">
                   Do you have autoimmune issues?{' '}
@@ -329,7 +332,7 @@ export default function Home({ posts }) {
                 </li>
               </ul>
               <br></br>
-              <p className="font-bold text-gray-800">This course is for you</p>
+              <p className="font-bold text-gray-800 dark:text-gray-200">This course is for you</p>
             </div>
             <div className="col-span-1 py-2 px-2">
               <div>
@@ -340,12 +343,12 @@ export default function Home({ posts }) {
                     layout="responsive"
                     height="180px"
                     width="320px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                 </a>
               </div>
-              <h3 className="mt-5 text-xl font-bold">Metabolic Syndrome</h3>
+              <h3 className="mt-5 text-xl font-bold dark:text-gray-200 ">Metabolic Syndrome</h3>
               <ul>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">Erectile Dysfunction? </li>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">
@@ -359,13 +362,17 @@ export default function Home({ posts }) {
                 <li className="ml-2 text-gray-800 dark:text-gray-200">Heart Disease?</li>
               </ul>
               <br></br>
-              <p className="font-bold text-gray-800">This course will help you </p>
+              <p className="font-bold text-gray-800 dark:text-gray-200">
+                This course will help you{' '}
+              </p>
             </div>
           </div>
 
-          <p className="prose mb-3  max-w-none text-lg text-gray-800 dark:text-gray-300">
+          <p className=" mb-3  max-w-none text-lg text-gray-800 dark:text-gray-300">
             If you need more help with your health then please check out my other health courses by{' '}
-            <a href="https://drsuresh.teachable.com">clicking here.</a>
+            <a href="https://drsuresh.teachable.com" className="text-blue-800 dark:text-blue-500">
+              clicking here.
+            </a>
             <br />
             Simple and easy to understand, my health courses have been designed to teach you how to
             perfect your health. My courses cover a wide range of topics including diet, nutrition
@@ -399,15 +406,17 @@ export default function Home({ posts }) {
           <h2 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Need even more help? Book for a consult
           </h2>
-          <p className="prose mb-3 max-w-none text-lg text-gray-600 dark:text-gray-300">
+          <p className=" mb-3 max-w-none text-lg text-gray-600 dark:text-gray-300">
             The Meat Medic Podcast is run by myself -{' '}
-            <a href="https://drsuresh.com.au">Dr Suresh Khirwadkar</a>. I'm a Specialist GP and
-            Board Certified Lifestyle Physician.
+            <a href="https://drsuresh.com.au" className="text-blue-800 dark:text-blue-500">
+              Dr Suresh Khirwadkar
+            </a>
+            . I'm a Specialist GP and Board Certified Lifestyle Physician.
             <br />I specialise in helping patients through diet, nutrition and lifestyle changes and
             I practices a mix of conventional medicine, lifestyle medicine, integrative medicine and
-            functional medicine to help my patients. You can read more about me{' '}
-            <Link href="/about" className="text-gray-900 dark:text-gray-100">
-              here
+            functional medicine to help my patients. You can read more about me on my
+            <Link href="/about" className="text-blue-800 dark:text-blue-500">
+              about page
             </Link>
             .
           </p>
@@ -439,7 +448,7 @@ export default function Home({ posts }) {
                 />
               </div>
 
-              <p className="prose mb-3 max-w-none text-gray-800 dark:text-gray-300">
+              <p className=" mb-3 max-w-none text-gray-800 dark:text-gray-300">
                 The Meat Medic Podcast Optimising physical and mental health through optimum diet,
                 nutrition and lifestyle Welcome to The Meat Medic Podcast. I'm your host Dr Suresh
                 Khirwadkar. I'm a GP and Lifestyle Physician and I'm a practicing carnivore. I've
@@ -546,9 +555,9 @@ export default function Home({ posts }) {
         </div>
 
         <div className="mt-4">
-          <h5 className="mt-10 mb-10 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="mt-10 mb-10 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Membership Options
-          </h5>
+          </h1>
           <p className="mb-3 max-w-none text-center text-lg text-gray-800 dark:text-gray-300 sm:px-36">
             Do you want extra from The Meat Medic Podcast? Check out the membership options. From
             general support to private discord servers and more!
@@ -564,14 +573,14 @@ export default function Home({ posts }) {
                     layout="responsive"
                     height="180px"
                     width="320px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                 </a>
               </div>
-              <h5 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
+              <h2 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
                 Bronze Member
-              </h5>
+              </h2>
               <ul>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">General Financial Support</li>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">YouTube Badges</li>
@@ -587,14 +596,14 @@ export default function Home({ posts }) {
                     layout="responsive"
                     height="180px"
                     width="320px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                 </a>
               </div>
-              <h5 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
+              <h2 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
                 Silver Member
-              </h5>
+              </h2>
               <ul>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">Bronze Perks</li>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">
@@ -612,14 +621,14 @@ export default function Home({ posts }) {
                     layout="responsive"
                     height="180px"
                     width="320px"
-                    objectFit="constrain"
+                    objectFit="contain"
                     loading="lazy"
                   />
                 </a>
               </div>
-              <h5 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
+              <h2 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
                 Gold Member
-              </h5>
+              </h2>
               <ul>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">Silver Perks</li>
                 <li className="ml-2 text-gray-800 dark:text-gray-200">

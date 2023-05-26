@@ -36,7 +36,7 @@ module.exports = {
           css: {
             color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.blue.500'),
+              color: theme('colors.blue.800'),
               '&:hover': {
                 color: `${theme('colors.blue.600')} !important`,
               },
@@ -104,9 +104,9 @@ module.exports = {
           css: {
             color: theme('colors.gray.300'),
             a: {
-              color: theme('colors.primary.800'),
+              color: theme('colors.blue.100'),
               '&:hover': {
-                color: `${theme('colors.primary.500')} !important`,
+                color: `${theme('colors.red.900')} !important`,
               },
               code: { color: theme('colors.primary.400') },
             },
@@ -121,7 +121,8 @@ module.exports = {
               color: theme('colors.gray.100'),
             },
             h3: {
-              fontWeight: '600',
+              fontWeight: '700',
+              letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.100'),
             },
             'h4,h5,h6': {
