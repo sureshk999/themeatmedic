@@ -5,7 +5,7 @@ import NewsletterForm from './NewsletterFormFooter'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 dark:bg-white">
+    <footer className="bg-slate-600 dark:bg-white">
       <div className="mt-10 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="6" />

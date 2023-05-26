@@ -48,10 +48,10 @@ export default function Home({ posts }) {
                 />
               </div>
 
-              <h2 className=" mb-5 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 lg:py-10 xl:text-5xl">
+              <h1 className=" mb-5 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 lg:py-10 xl:text-5xl">
                 Hello and Welcome! <br></br> <br />
                 I'm Dr Suresh Khirwadkar
-              </h2>
+              </h1>
 
               <div>
                 <p className="md:text-md mb-5 mr-5 mb-3 max-w-none text-lg text-gray-800 dark:text-gray-300 md:mb-0 lg:text-lg xl:text-xl">
@@ -156,7 +156,15 @@ export default function Home({ posts }) {
                 rel="noreferrer"
               >
                 <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
-                  <img src="/applepodcasts.png" />
+                  <Image
+                    alt="Apple Podcasts"
+                    src="/applepodcasts.png"
+                    layout="intrinsic"
+                    height="40px"
+                    width="40px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
                   <p className="px-5">Apple Podcasts</p>
                 </div>
               </a>
@@ -167,7 +175,15 @@ export default function Home({ posts }) {
                 rel="noreferrer"
               >
                 <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
-                  <img src="/googlepodcasts.png" />
+                  <Image
+                    alt="Google Podcasts"
+                    src="/googlepodcasts.png"
+                    layout="intrinsic"
+                    height="40px"
+                    width="40px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
                   <p className="px-5">Google Podcasts</p>
                 </div>
               </a>
@@ -178,7 +194,15 @@ export default function Home({ posts }) {
                 rel="noreferrer"
               >
                 <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
-                  <img src="/amazonmusic.png" />
+                  <Image
+                    alt="Amazon Music"
+                    src="/amazonmusic.png"
+                    layout="intrinsic"
+                    height="40px"
+                    width="40px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
                   <p className="px-5">Amazon Music</p>
                 </div>
               </a>
@@ -189,7 +213,15 @@ export default function Home({ posts }) {
                 rel="noreferrer"
               >
                 <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
-                  <img src="/spotify.png" />
+                  <Image
+                    alt="Spotify Podcasts"
+                    src="/spotify.png"
+                    layout="intrinsic"
+                    height="40px"
+                    width="40px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
                   <p className="px-5">Spotify</p>
                 </div>
               </a>
@@ -200,7 +232,15 @@ export default function Home({ posts }) {
                 rel="noreferrer"
               >
                 <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
-                  <img src="/rss.png" />
+                  <Image
+                    alt="RSS"
+                    src="/rss.png"
+                    layout="intrinsic"
+                    height="40px"
+                    width="40px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
 
                   <p className="px-5">RSS Feed</p>
                 </div>
@@ -208,7 +248,15 @@ export default function Home({ posts }) {
 
               <a href="https://youtube.com/@themeatmedic" target="_blank" rel="noreferrer">
                 <div className="flex w-60 flex-wrap items-center justify-center rounded-xl border-2 border-black px-2 py-2 text-black dark:bg-white">
-                  <img src="/youtube.png" />
+                  <Image
+                    alt="YouTube"
+                    src="/youtube.png"
+                    layout="intrinsic"
+                    height="40px"
+                    width="40px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
                   <p className="px-5">YouTube</p>
                 </div>
               </a>
@@ -232,21 +280,23 @@ export default function Home({ posts }) {
                   />
                 </a>
               </div>
-              <h4 className="mt-5 text-xl font-bold">Insulin Resistance</h4>
-
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Fatigued or low enegy? </li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">
-                Struggling with your weight?{' '}
-              </li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">
-                Low energy levels or fatigue?
-              </li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Acne?</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Arthritis?</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">PCOS?</li>
+              <h3 className="mt-5 text-xl font-bold">Insulin Resistance</h3>
+              <ul>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Fatigued or low energy? </li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  Struggling with your weight?{' '}
+                </li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  Low energy levels or fatigue?
+                </li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Acne?</li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Arthritis?</li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">PCOS?</li>
+              </ul>
               <br></br>
               <p className="font-bold text-gray-800">You need this course </p>
             </div>
+
             <div className="col-span-1 py-2 px-2">
               <div>
                 <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
@@ -261,19 +311,23 @@ export default function Home({ posts }) {
                   />
                 </a>
               </div>
-              <h4 className="mt-5 text-xl font-bold">Carnivore Challenge</h4>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">
-                Do you have autoimmune issues?{' '}
-              </li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Chronic Pain?</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">
-                Can't lose weight no matter what?{' '}
-              </li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">
-                Acne or eczema that just won't go away?
-              </li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Irritable Bowel Syndrome?</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Struggling to get pregnant?</li>
+              <h3 className="mt-5 text-xl font-bold">Carnivore Challenge</h3>
+              <ul>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  Do you have autoimmune issues?{' '}
+                </li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Chronic Pain?</li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  Can't lose weight no matter what?{' '}
+                </li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  Acne or eczema that just won't go away?
+                </li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Irritable Bowel Syndrome?</li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  Struggling to get pregnant?
+                </li>
+              </ul>
               <br></br>
               <p className="font-bold text-gray-800">This course is for you</p>
             </div>
@@ -291,15 +345,19 @@ export default function Home({ posts }) {
                   />
                 </a>
               </div>
-              <h4 className="mt-5 text-xl font-bold">Metabolic Syndrome</h4>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Erectile Dysfunction? </li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Feeling sluggish or tired?</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Skin Tags?</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Huge Belly?</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">
-                PCOS or Erectile Dysfunction?
-              </li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Heart Disease?</li>
+              <h3 className="mt-5 text-xl font-bold">Metabolic Syndrome</h3>
+              <ul>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Erectile Dysfunction? </li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  Feeling sluggish or tired?
+                </li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Skin Tags?</li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Huge Belly?</li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  PCOS or Erectile Dysfunction?
+                </li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Heart Disease?</li>
+              </ul>
               <br></br>
               <p className="font-bold text-gray-800">This course will help you </p>
             </div>
@@ -415,9 +473,9 @@ export default function Home({ posts }) {
           </div>
         </div>
         <div className=" ">
-          <h2 className="mt-10 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h4 className="mt-10 mb-2 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Latest Episode
-          </h2>
+          </h4>
 
           <ul className="">
             {!posts.length && 'No posts found.'}
@@ -488,9 +546,9 @@ export default function Home({ posts }) {
         </div>
 
         <div className="mt-4">
-          <h2 className="mt-10 mb-10 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+          <h5 className="mt-10 mb-10 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Membership Options
-          </h2>
+          </h5>
           <p className="mb-3 max-w-none text-center text-lg text-gray-800 dark:text-gray-300 sm:px-36">
             Do you want extra from The Meat Medic Podcast? Check out the membership options. From
             general support to private discord servers and more!
@@ -511,11 +569,13 @@ export default function Home({ posts }) {
                   />
                 </a>
               </div>
-              <h4 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
+              <h5 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
                 Bronze Member
-              </h4>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">General Financial Support</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">YouTube Badges</li>
+              </h5>
+              <ul>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">General Financial Support</li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">YouTube Badges</li>
+              </ul>
             </div>
             <div className="col-span-1 py-2 px-2">
               <div>
@@ -532,13 +592,15 @@ export default function Home({ posts }) {
                   />
                 </a>
               </div>
-              <h4 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
+              <h5 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
                 Silver Member
-              </h4>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Bronze Perks</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">
-                Early Access and Exclusive Content
-              </li>
+              </h5>
+              <ul>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Bronze Perks</li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  Early Access and Exclusive Content
+                </li>
+              </ul>
             </div>
             <div className="col-span-1 py-2 px-2">
               <div>
@@ -555,13 +617,15 @@ export default function Home({ posts }) {
                   />
                 </a>
               </div>
-              <h4 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
+              <h5 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
                 Gold Member
-              </h4>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">Silver Perks</li>
-              <li className="ml-2 text-gray-800 dark:text-gray-200">
-                Private Discord Server For Coaching
-              </li>
+              </h5>
+              <ul>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">Silver Perks</li>
+                <li className="ml-2 text-gray-800 dark:text-gray-200">
+                  Private Discord Server For Coaching
+                </li>
+              </ul>
             </div>
           </div>
         </div>
