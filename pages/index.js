@@ -90,7 +90,7 @@ export default function Home({ posts }) {
               <Image
                 className="rounded-2xl"
                 alt="Dr Suresh Khirwadkar"
-                src="/suresh.webp"
+                src="/suresh_small.jpg"
                 layout="intrinsic"
                 height="550px"
                 width="550px"
