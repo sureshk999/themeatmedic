@@ -36,7 +36,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
 
   return (
     <div>
-      <div className="pb-1 pl-1 text-lg font-semibold text-gray-100 dark:text-gray-900">
+      <div className="pb-1 pl-1 text-lg font-semibold text-gray-200 dark:text-gray-800">
         {title}
       </div>
       <form className="flex flex-col sm:flex-row" onSubmit={subscribe}>
@@ -46,7 +46,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
           </label>
           <input
             autoComplete="email"
-            className="w-72 rounded-md border-2 border-black px-4 placeholder-black focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-900"
+            className="w-72 rounded-md border-2 border-black px-4 text-black placeholder-black focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-900"
             id="email-input"
             name="email"
             placeholder={subscribed ? "You're subscribed !  🎉" : 'Enter your email'}

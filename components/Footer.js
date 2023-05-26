@@ -29,16 +29,57 @@ export default function Footer() {
             </div>
           )}
         </div>
-        <div className="flex">
-          <a href="https://drsuresh.com.au">
-            <p className="mb-5 text-white dark:text-black"> Dr Suresh Khirwadkar | </p>
-          </a>
-          <a href="https://themeatmedic.com">
-            <p className="mb-5 text-white dark:text-black">| The Meat Medic | </p>
-          </a>
-          <a href="https://sureshkhirwadkar.com">
-            <p className="mb-5 text-white dark:text-black">| Suresh Khirwadkar </p>
-          </a>
+        <div className="flex grid space-x-6 px-2 sm:w-1/2 sm:grid-cols-3">
+          <div className="grid-cols-1 text-left">
+            <p className="sm:text-md mb-3 text-sm font-extrabold text-white dark:text-black">
+              Courses
+            </p>
+            <a href="https://drsuresh.com.au">
+              <p className="sm:text-md mb-3 text-sm text-white dark:text-black ">
+                Insulin Resistance
+              </p>
+            </a>
+            <a href="https://themeatmedic.com">
+              <p className="sm:text-md mb-3 text-sm text-white dark:text-black ">
+                30 Day Carnivore
+              </p>
+            </a>
+            <a href="https://sureshkhirwadkar.com">
+              <p className="mb-3 text-sm text-white dark:text-black ">Metabolic Syndrome</p>
+            </a>
+          </div>
+
+          <div className="grid-cols-1 text-left">
+            <p className="sm:text-md mb-3 text-sm font-extrabold text-white dark:text-black">
+              The Meat Medic
+            </p>
+            <a href="https://drsuresh.com.au">
+              <p className="sm:text-md mb-3 text-sm text-white dark:text-black ">About</p>
+            </a>
+            <a href="https://themeatmedic.com">
+              <p className="sm:text-md mb-3 text-sm text-white dark:text-black ">Home</p>
+            </a>
+            <a href="https://sureshkhirwadkar.com">
+              <p className="sm:text-md mb-3 text-sm text-white dark:text-black ">Blog</p>
+            </a>
+          </div>
+
+          <div className="grid-cols-1 text-left">
+            <p className="sm:text-md mb-3 text-sm font-extrabold text-white dark:text-black">
+              Websites
+            </p>
+            <a href="https://drsuresh.com.au">
+              <p className="sm:text-md mb-3 text-sm text-white dark:text-black ">
+                Dr Suresh Khirwadkar
+              </p>
+            </a>
+            <a href="https://themeatmedic.com">
+              <p className="sm:text-md mb-3 text-sm text-white dark:text-black ">The Meat Medic</p>
+            </a>
+            <a href="https://sureshkhirwadkar.com">
+              <p className="mb-3 text-sm text-white dark:text-black ">Suresh Khirwadkar</p>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
