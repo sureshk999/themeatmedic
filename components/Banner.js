@@ -6,10 +6,10 @@ import Image from 'next/image'
 export default function Banner() {
   return (
     <banner>
-      <div className="grid grid-cols-1 items-center bg-red-400">
+      <div className="grid grid-cols-1 items-center bg-gradient-to-r from-blue-500 to-red-500">
         <div className="mt-3 mb-3 space-x-4">
-          <h4 className="content-center items-center px-5 text-center text-xl ">
-            I've just launched a new health course:
+          <h4 className="text-md content-center items-center px-5 text-center text-white ">
+            New Health Course Available:
           </h4>
           <div className="align-center content-center justify-center text-center">
             <Image
@@ -17,14 +17,26 @@ export default function Banner() {
               alt="Dr Suresh Khirwadkar"
               src="/steak.png"
               layout="intrinsic"
-              height="15px"
-              width="15px"
+              height="25px"
+              width="25px"
               loading="eager"
               objectFit="cover"
             />
-            <h4 className="inline content-center items-center px-5 text-center text-xl ">
-              30 Day Carnivore Challenge
-            </h4>
+            <a href="https://drsuresh.teachable.com">
+              <h4 className="inline content-center items-center px-5 text-center text-xl font-extrabold text-white underline">
+                30 Day Carnivore Challenge
+              </h4>
+            </a>
+            <Image
+              className="rounded-full"
+              alt="Dr Suresh Khirwadkar"
+              src="/steak.png"
+              layout="intrinsic"
+              height="25px"
+              width="25px"
+              loading="eager"
+              objectFit="cover"
+            />
           </div>
         </div>
       </div>

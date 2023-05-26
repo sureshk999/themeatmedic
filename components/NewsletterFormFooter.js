@@ -36,7 +36,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
 
   return (
     <div>
-      <div className="pb-1 pl-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
+      <div className="pb-1 pl-1 text-lg font-semibold text-gray-100 dark:text-gray-900">
         {title}
       </div>
       <form className="flex flex-col sm:flex-row" onSubmit={subscribe}>

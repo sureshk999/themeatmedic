@@ -48,13 +48,14 @@ export default function Home({ posts }) {
                 />
               </div>
 
-              <h2 className=" mb-5 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 xl:text-5xl">
-                Dr Suresh Khirwadkar
+              <h2 className=" mb-5 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 lg:py-10 xl:text-5xl">
+                Hello and Welcome! <br></br> <br />
+                I'm Dr Suresh Khirwadkar
               </h2>
 
               <div>
-                <p className="md:text-md mb-10 mr-5 mb-3 max-w-none text-lg text-gray-600 dark:text-gray-300 md:mb-0 lg:text-lg xl:text-xl">
-                  I'm an author, YouTuber, Podcaster, Doctor, a father and a husband.
+                <p className="md:text-md mb-5 mr-5 mb-3 max-w-none text-lg text-gray-800 dark:text-gray-300 md:mb-0 lg:text-lg xl:text-xl">
+                  I'm an author, YouTuber, Podcaster, Doctor, a Father and a Husband.
                   <br />
                   <br />
                   The Meat Medic Podcast is <b>free</b> and it's available for you to optomise your
@@ -66,11 +67,11 @@ export default function Home({ posts }) {
                   to improve your health, saving your <b>time</b> and <b>money</b>
                 </p>
 
-                <div className="mb-10 mr-2 flex grid grid-cols-1 grid-rows-1 flex-wrap place-items-center gap-x-2 gap-y-5 sm:mt-7 md:grid-cols-2 lg:mt-5 ">
+                <div className="mb-5 mr-2 flex grid grid-cols-1 grid-rows-1 flex-wrap place-items-center gap-x-2 gap-y-5 sm:mt-7 md:grid-cols-2 lg:mt-5 ">
                   <div className="flex flex-col items-center justify-center">
                     <a
                       href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
-                      className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
+                      className="rounded-xl border-4 border-double border-white bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:border-black dark:bg-white dark:text-black dark:hover:bg-primary-500 "
                     >
                       Podcast &rarr;
                     </a>
@@ -78,7 +79,7 @@ export default function Home({ posts }) {
                   <div className="flex flex-col items-center justify-center">
                     <a
                       href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
-                      className="rounded-md border-2 border-double border-black bg-white py-2 px-4 text-xl font-bold text-black hover:bg-primary-500 dark:border-white dark:bg-black dark:text-white dark:hover:bg-primary-500 "
+                      className="rounded-xl border-4 border-double border-black bg-white py-2 px-4 text-xl font-bold text-black hover:bg-primary-500 dark:border-white dark:bg-black dark:text-white dark:hover:bg-primary-500 "
                     >
                       Courses &rarr;
                     </a>
@@ -93,8 +94,8 @@ export default function Home({ posts }) {
                 alt="Dr Suresh Khirwadkar"
                 src="/suresh.webp"
                 layout="intrinsic"
-                height="650px"
-                width="650px"
+                height="550px"
+                width="550px"
                 loading="eager"
                 objectFit="cover"
               />
@@ -105,44 +106,49 @@ export default function Home({ posts }) {
         </div>
 
         <div className="">
-          <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
-            <Image
-              alt="30 day carnivore challenge"
-              src="/htc.webp"
-              layout="responsive"
-              height="30vh"
-              width="60vw"
-              objectFit="cover"
-              loading="eager"
-            />
-          </a>
-        </div>
-        <br></br>
-        <div className="">
-          <h2 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+          <h2 className="mt-5 mb-10 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
             Want to start a carnivore diet?
           </h2>
-          <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
-            Check out my simple guide to starting a carnivore diet by{' '}
-            <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">clicking here</a>
-            <br />
-            Over 100 pages of high quality, evidence based information
-            <br />
-            Available by Teachables course or downloadable eBook
+          <p className="prose mb-3 max-w-none text-lg text-gray-800 dark:text-gray-300">
+            New to the Carnivore Diet and not sure what to do? The best way to start is by{' '}
+            <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">clicking here</a>.
+            My guide has over 100 pages of high quality, evidence based, highly researched
+            information and is available via Teachables course or downloadable eBook.
           </p>
+
+          <div className="mb-10">
+            <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
+              <Image
+                alt="30 day carnivore challenge"
+                src="/htc.webp"
+                layout="responsive"
+                height="30vh"
+                width="60vw"
+                objectFit="cover"
+                loading="lazy"
+              />
+            </a>
+          </div>
 
           <div className="flex flex-col items-center justify-center">
             <a
               href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge"
-              className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
+              className="rounded-xl bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
             >
-              Buy Now
+              Enrol Now
             </a>
           </div>
           <div className="mt-5 py-5">
-            <h2 className="py-10 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+            <h2 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
               Listen to the Meat Medic Podcast for free
             </h2>
+            <p className="mb-5 text-lg ">
+              Consistently in the Top 50 Health and Nutrition Podcasts,{' '}
+              <i>The Meat Medic Podcast</i> is 5* rated on Apple Podcasts and is an excellent source
+              of information on Low Carb, Keto and Carnivore Diet. I also discuss wider health
+              topics like sleep, stress, exercise and integrative, functional and lifestyle
+              medicine.
+            </p>
             <div className="xs:grid-cols-6 flex grid flex-wrap place-items-center gap-x-2 gap-y-5 sm:grid-cols-2 sm:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2">
               <a
                 href="https://podcasts.apple.com/au/podcast/the-meat-medic-podcast/id1667140036"
@@ -208,54 +214,150 @@ export default function Home({ posts }) {
               </a>
             </div>
           </div>
-          <h2 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
-            Need help with your health?
+          <h2 className="mt-10 mb-10 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+            Health Courses
           </h2>
-          <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
-            Check out my other health courses by{' '}
-            <a href="https://drsuresh.teachable.com">clicking here</a>
+          <div className="grid px-0 py-5 dark:text-black sm:grid-cols-3  ">
+            <div className="col-span-1 py-2 px-2">
+              <div>
+                <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
+                  <Image
+                    alt="Insulin Resistance"
+                    src="/insulin_resistance.jpg"
+                    layout="responsive"
+                    height="180px"
+                    width="320px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <h4 className="mt-5 text-xl font-bold">Insulin Resistance</h4>
+
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Fatigued or low enegy? </li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">
+                Struggling with your weight?{' '}
+              </li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">
+                Low energy levels or fatigue?
+              </li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Acne?</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Arthritis?</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">PCOS?</li>
+              <br></br>
+              <p className="font-bold text-gray-800">You need this course </p>
+            </div>
+            <div className="col-span-1 py-2 px-2">
+              <div>
+                <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
+                  <Image
+                    alt="30 day carnivore challenge"
+                    src="/htc.webp"
+                    layout="responsive"
+                    height="180px"
+                    width="320px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <h4 className="mt-5 text-xl font-bold">Carnivore Challenge</h4>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">
+                Do you have autoimmune issues?{' '}
+              </li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Chronic Pain?</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">
+                Can't lose weight no matter what?{' '}
+              </li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">
+                Acne or eczema that just won't go away?
+              </li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Irritable Bowel Syndrome?</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Struggling to get pregnant?</li>
+              <br></br>
+              <p className="font-bold text-gray-800">This course is for you</p>
+            </div>
+            <div className="col-span-1 py-2 px-2">
+              <div>
+                <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
+                  <Image
+                    alt="Metabolic Syndrome"
+                    src="/metabolic_syndrome.jpg"
+                    layout="responsive"
+                    height="180px"
+                    width="320px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <h4 className="mt-5 text-xl font-bold">Metabolic Syndrome</h4>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Erectile Dysfunction? </li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Feeling sluggish or tired?</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Skin Tags?</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Huge Belly?</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">
+                PCOS or Erectile Dysfunction?
+              </li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Heart Disease?</li>
+              <br></br>
+              <p className="font-bold text-gray-800">This course will help you </p>
+            </div>
+          </div>
+
+          <p className="prose mb-3  max-w-none text-lg text-gray-800 dark:text-gray-300">
+            If you need more help with your health then please check out my other health courses by{' '}
+            <a href="https://drsuresh.teachable.com">clicking here.</a>
             <br />
-            Simple and easy to understand, these health courses have been designed by myself to
-            teach you how to perfect your health
-            <br />
-            Covering diet, nutrition and metabolic health there are mutliple courses available
-            including how to treat insulin resistance, metabolic syndrome and how to lose weight for
-            good.
+            Simple and easy to understand, my health courses have been designed to teach you how to
+            perfect your health. My courses cover a wide range of topics including diet, nutrition
+            and metabolic health, including obesity, weight loss, metabolic syndrome and autoimmune
+            conditions.
           </p>
         </div>
 
-        <div className="">
-          <a href="https://drsuresh.teachable.com">
-            <Image
-              alt="health courses now available"
-              src="/click.jpg"
-              layout="responsive"
-              height="30vh"
-              width="60vw"
-              objectFit="cover"
-              loading="lazy"
-            />
-          </a>
-        </div>
+        <h4 className="mt-10 mb-10 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+          Join My Health Newsletter
+        </h4>
+        <p className="text-lg md:px-36">
+          Join thousands of others in my Newsletter. I regularly send updates on health topics, my
+          podcast, my social media activities, new health courses, <b>discount codes</b> for my
+          courses, and affiliate coupons.
+          <br />
+          <br />
+          As a bonus I'll send you my <b>free</b>{' '}
+          <i>Introduction to Low Carb, Keto and Carnivore eBook</i> just for signing up. You can
+          cancel any time.
+        </p>
+
+        {siteMetadata.newsletter.provider !== '' && (
+          <div className="flex items-center justify-center pt-4">
+            <NewsletterForm />
+          </div>
+        )}
+
         <br></br>
         <div className=" mb-3">
           <h2 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
-            Need more help? Book for a consult
+            Need even more help? Book for a consult
           </h2>
-          <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
-            The Meat Medic Podcast is run by{' '}
-            <a href="https://drsuresh.com.au">Dr Suresh Khirwadkar</a>, a Specialist GP and Board
-            Certified Lifestyle Physician.
-            <br />
-            Dr Suresh specialises in helping patients through diet, nutrition and lifestyle changes
-            and he practices a mix of conventional medicine, lifestyle medicine, integrative
-            medicine and functional medicine.
+          <p className="prose mb-3 max-w-none text-lg text-gray-600 dark:text-gray-300">
+            The Meat Medic Podcast is run by myself -{' '}
+            <a href="https://drsuresh.com.au">Dr Suresh Khirwadkar</a>. I'm a Specialist GP and
+            Board Certified Lifestyle Physician.
+            <br />I specialise in helping patients through diet, nutrition and lifestyle changes and
+            I practices a mix of conventional medicine, lifestyle medicine, integrative medicine and
+            functional medicine to help my patients. You can read more about me{' '}
+            <Link href="/about" className="text-gray-900 dark:text-gray-100">
+              here
+            </Link>
+            .
           </p>
 
           <div className="flex flex-col items-center justify-center">
             <a
               href="https://drsuresh.com.au"
-              className="rounded-md bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
+              className="rounded-xl bg-black py-2 px-4 text-xl font-bold text-white hover:bg-primary-500 dark:bg-white dark:text-black dark:hover:bg-primary-500 "
             >
               Book Now
             </a>
@@ -264,7 +366,7 @@ export default function Home({ posts }) {
         <div>
           <div>
             <h3 className="mt-10 mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
-              About
+              The Meat Medic Podcast
             </h3>
             <div className=" w-full">
               <div className="float-left mr-3">
@@ -279,7 +381,7 @@ export default function Home({ posts }) {
                 />
               </div>
 
-              <p className="prose mb-3 max-w-none text-gray-600 dark:text-gray-300">
+              <p className="prose mb-3 max-w-none text-gray-800 dark:text-gray-300">
                 The Meat Medic Podcast Optimising physical and mental health through optimum diet,
                 nutrition and lifestyle Welcome to The Meat Medic Podcast. I'm your host Dr Suresh
                 Khirwadkar. I'm a GP and Lifestyle Physician and I'm a practicing carnivore. I've
@@ -386,28 +488,84 @@ export default function Home({ posts }) {
         </div>
 
         <div className="mt-4">
-          <h5 className=" mt-10 py-5 text-3xl font-bold leading-8 tracking-tight">
-            Memberships Available
-          </h5>
-          <a href="https://bit.ly/42Qswb9">
-            <Image
-              alt="memberships"
-              src="/membership.webp"
-              layout="responsive"
-              height="30vh"
-              width="60vw"
-              objectFit="fill"
-              loading="eager"
-            />
-          </a>
+          <h2 className="mt-10 mb-10 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-6xl md:leading-14">
+            Membership Options
+          </h2>
+          <p className="mb-3 max-w-none text-center text-lg text-gray-800 dark:text-gray-300 sm:px-36">
+            Do you want extra from The Meat Medic Podcast? Check out the membership options. From
+            general support to private discord servers and more!
+          </p>
+          <div className="grid px-0 py-5 dark:text-black sm:grid-cols-3  ">
+            <div className="col-span-1 py-2 px-2">
+              <div>
+                <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
+                  <Image
+                    className="rounded-xl"
+                    alt="Bronze Member"
+                    src="/bronze_member.jpg"
+                    layout="responsive"
+                    height="180px"
+                    width="320px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <h4 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
+                Bronze Member
+              </h4>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">General Financial Support</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">YouTube Badges</li>
+            </div>
+            <div className="col-span-1 py-2 px-2">
+              <div>
+                <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
+                  <Image
+                    className="rounded-xl"
+                    alt="Silver Member"
+                    src="/silver_member.jpg"
+                    layout="responsive"
+                    height="180px"
+                    width="320px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <h4 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
+                Silver Member
+              </h4>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Bronze Perks</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">
+                Early Access and Exclusive Content
+              </li>
+            </div>
+            <div className="col-span-1 py-2 px-2">
+              <div>
+                <a href="https://drsuresh.teachable.com/p/30-day-carnivore-challenge">
+                  <Image
+                    className="rounded-xl"
+                    alt="Gold Member"
+                    src="/gold_member.jpg"
+                    layout="responsive"
+                    height="180px"
+                    width="320px"
+                    objectFit="constrain"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <h4 className="ml-2 mt-5 text-xl font-bold text-gray-800 dark:text-gray-200">
+                Gold Member
+              </h4>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">Silver Perks</li>
+              <li className="ml-2 text-gray-800 dark:text-gray-200">
+                Private Discord Server For Coaching
+              </li>
+            </div>
+          </div>
         </div>
       </div>
-
-      {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
     </>
   )
 }

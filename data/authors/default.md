@@ -27,4 +27,4 @@ My real passion though is helping people to help themselves. I'm a huge believer
 
 As well as my in-hours face to face consulting, I now also offering out of hours video consults for Lifestyle / Functional Medicine consults, as well as psychotherapy and counselling.
 
-Finally, I'm extremely excited to announce The Meat Medic Discord Community Server - a place where we can all meet, chat, hang out, and get support with our health issues. Further support is available to those who need it through my [membership](url=https://themeatmedic.com/member) programs.
+Finally, I'm extremely excited to announce The Meat Medic Discord Community Server - a place where we can all meet, chat, hang out, and get support with our health issues. Further support is available to those who need it through my [membership](/community) programs.

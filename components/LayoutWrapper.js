@@ -13,7 +13,7 @@ const LayoutWrapper = ({ children }) => {
     <SectionContainer>
       <Banner />
       <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between pt-5 ">
+        <header className="flex items-center justify-between px-5 pt-5 ">
           <div className="px-5">
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
@@ -36,7 +36,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className="p-1 text-lg font-medium text-gray-900 dark:text-gray-100 sm:p-4"
                 >
                   {link.title}
                 </Link>
@@ -46,7 +46,7 @@ const LayoutWrapper = ({ children }) => {
             <MobileNav />
           </div>
         </header>
-        <main className="mb-auto px-5">{children}</main>
+        <main className="mb-auto px-5 md:px-10 lg:px-36">{children}</main>
         <Footer />
       </div>
     </SectionContainer>
