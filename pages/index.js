@@ -37,7 +37,7 @@ export default function Home({ posts }) {
                 <Image
                   className="rounded-full"
                   alt="Dr Suresh Khirwadkar"
-                  src="/suresh.webp"
+                  src="/suresh_small.jpg"
                   layout="intrinsic"
                   height="100px"
                   width="100px"
