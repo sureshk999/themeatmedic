@@ -93,20 +93,13 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                             </Link>
                           )}
                         </dd>
-
-                        <div className="flex space-x-3 pt-6">
-                          <SocialIcon kind="mail" href={`mailto:${email}`} />
-                          <SocialIcon kind="linkedin" href={linkedin} />
-                          <SocialIcon kind="twitter" href={twitter} />
-                          <SocialIcon kind="youtube" href={youtube} />
-                          <SocialIcon kind="instagram" href={instagram} />
-                        </div>
                       </dl>
                     </li>
                   ))}
                 </ul>
               </dd>
             </dl>
+
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
               {/* <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
