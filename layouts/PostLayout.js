@@ -8,6 +8,7 @@ import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import Share from '@/components/Share'
+import SocialIcon from '@/components/social-icons-inverted'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -18,7 +19,19 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, images, tags } = frontMatter
+  const {
+    slug,
+    fileName,
+    date,
+    title,
+    images,
+    tags,
+    email,
+    twitter,
+    linkedin,
+    youtube,
+    instagram,
+  } = frontMatter
 
   return (
     <SectionContainer>
@@ -80,6 +93,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                             </Link>
                           )}
                         </dd>
+
+                        <div className="flex space-x-3 pt-6">
+                          <SocialIcon kind="mail" href={`mailto:${email}`} />
+                          <SocialIcon kind="linkedin" href={linkedin} />
+                          <SocialIcon kind="twitter" href={twitter} />
+                          <SocialIcon kind="youtube" href={youtube} />
+                          <SocialIcon kind="instagram" href={instagram} />
+                        </div>
                       </dl>
                     </li>
                   ))}
@@ -129,6 +150,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                           Next Article
                         </h2>
+
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>

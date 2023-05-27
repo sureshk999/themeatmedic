@@ -29,8 +29,8 @@ export default function Footer() {
             </div>
           )}
         </div>
-        <div className="flex grid space-x-6 px-2 sm:w-1/2 sm:grid-cols-3">
-          <div className="grid-cols-1 text-left">
+        <div className="flex grid px-2 sm:w-1/2 sm:grid-cols-3">
+          <div className="mb-2 grid-cols-1 text-left">
             <p className="sm:text-md mb-3 text-sm font-extrabold text-white dark:text-black">
               Courses
             </p>
@@ -49,7 +49,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="grid-cols-1 text-left">
+          <div className="mb-2 grid text-left sm:grid-cols-1">
             <p className="sm:text-md mb-3 text-sm font-extrabold text-white dark:text-black">
               The Meat Medic
             </p>
