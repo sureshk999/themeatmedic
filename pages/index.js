@@ -12,6 +12,9 @@ const Tag = dynamic(() => import('../components/Tag'))
 const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
+  const headers = {
+    'Cache-Control': 'public, max-age=60, s-maxage=60', // Adjust cache duration as needed
+  }
   const posts = await getAllFilesFrontMatter('blog')
 
   return { props: { posts } }
