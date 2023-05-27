@@ -12,6 +12,8 @@ const Tag = dynamic(() => import('../components/Tag'))
 const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
+  console.log('Executing getStaticProps') // Add console.log statement for debugging
+
   const posts = await getAllFilesFrontMatter('blog')
 
   return {
