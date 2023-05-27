@@ -1,6 +1,5 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFileBySlug } from '@/lib/mdx'
-import Tag from '@/components/Tag'
 
 const DEFAULT_LAYOUT = 'PostPage'
 
