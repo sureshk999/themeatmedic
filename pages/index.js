@@ -14,7 +14,12 @@ const MAX_DISPLAY = 5
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
 
-  return { props: { posts } }
+  return {
+    props: {
+      posts,
+    },
+    revlidate: 60,
+  }
 }
 
 export default function Home({ posts }) {
