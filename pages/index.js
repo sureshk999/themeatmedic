@@ -12,16 +12,9 @@ const Tag = dynamic(() => import('../components/Tag'))
 const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
-  console.log('Executing getStaticProps') // Add console.log statement for debugging
-
   const posts = await getAllFilesFrontMatter('blog')
 
-  return {
-    props: {
-      posts,
-    },
-    revalidate: 60, // Revalidate every 60 seconds
-  }
+  return { props: { posts } }
 }
 
 export default function Home({ posts }) {
