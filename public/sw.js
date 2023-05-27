@@ -2,7 +2,7 @@ const PRECACHE = 'precache-v1'
 const RUNTIME = 'runtime'
 
 const PRECACHE_URLS = [
-  './', // Alias for index.html
+  './about', // Alias for index.html
 ]
 
 self.addEventListener('install', (event) => {
