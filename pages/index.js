@@ -50,7 +50,7 @@ export default function Home({ posts }) {
               </div>
 
               <h1 className=" mb-5 mt-5 text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:mt-0 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 lg:py-10 xl:text-5xl">
-                Hello and Welcome! <br></br>
+                Hi and Welcome! <br></br>
                 I'm Dr Suresh Khirwadkar
               </h1>
 
